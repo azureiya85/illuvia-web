@@ -1,38 +1,92 @@
-# sv
+# Illuvia: The Clockwork Age
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Creating a project
+A digital setting guide for Savage Worlds Adventure Edition (SWADE) that blends clockpunk science with Renaissance fantasy. Explore a world where mechanical marvels meet magical creatures, where humans forge their destinies alongside fantasy creatures such as elves, dwarves, halflings, sentient automaton, and others.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🌍 About
+
+Illuvia is a science-fantasy setting inspired by the cultural and technological explosion of the 16th through late 18th centuries. This digital guide brings the setting to life with:
+
+- Complete rules adaptation for SWADE
+- New Edges, Hindrances, and Powers
+- Comprehensive lore and worldbuilding
+- Character options for diverse ancestries
+- CLokwork gear and mechanical wonders
+
+Explore themes of rebellion, order versus chaos, the price of progress, and the ethics of science—all infused with Renaissance optimism about human potential.
+
+## ⚙️ Tech Stack
+
+- **Framework**: [Svelte 5](https://svelte.dev/) with [SvelteKit](https://kit.svelte.dev/)
+- **Styling**: [Tailwind 4](https://tailwindcss.com/) with [Skeleton UI 3](https://www.skeleton.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+
+### Plugins & Resources
+
+- **Primary Icons**: [Lucide Svelte](https://lucide.dev/guide/packages/lucide-svelte)
+- **Secondary Icons**: [Iconify Svelte](https://iconify.design/docs/icon-components/svelte/)
+- **Typography**:
+  - Headings: [Grenze Gotisch](https://fonts.google.com/specimen/Grenze+Gotisch)
+  - Body: [EB Garamond](https://fonts.google.com/specimen/EB+Garamond)
+
+## 📊 Current Status
+
+The project is currently in the wireframing stage:
+- Basic layout structure implemented
+- Placeholder components in place
+- Dummy data modules for content structure
+- Minimal interactivity for navigation testing
+
+## 🗺️ Roadmap
+
+### Phase 1: Foundation (Current)
+- ✅ Wireframe core layouts
+- ✅ Establish design system
+- ✅ Set up component architecture
+
+### Phase 2: Interactivity & SEO
+- 🔲 Interactive character builder
+- 🔲 Dynamic rules reference system
+- 🔲 Search functionality
+- 🔲 SEO optimization
+- 🔲 Responsive design refinement
+
+### Phase 3: Content Population
+- 🔲 Basic rules adaptation
+- 🔲 Advanced rules modules
+- 🔲 Character options (Edges, Hindrances, Powers)
+- 🔲 Setting lore and worldbuilding
+
+### Phase 4: Polish & Launch
+- 🔲 Performance optimization
+- 🔲 Accessibility improvements
+- 🔲 Community feedback integration
+- 🔲 Documentation
+- 🔲 Official release
+
+## 🛠️ Development
 
 ```bash
-# create a new project in the current directory
-npx sv create
+# Install dependencies
+npm install
 
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+# Start development server
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## 📜 License
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+This project references the Savage Worlds game system, available from Pinnacle Entertainment Group at [www.peginc.com](https://www.peginc.com). 
+
+**Disclaimer:**
+
+*"This is an unofficial fan work and is not affiliated with or endorsed by Pinnacle Entertainment Group. Savage Worlds and all associated trademarks are the property of Pinnacle Entertainment Group."*
+
+Original content is licensed under [MIT License](LICENSE).
+
