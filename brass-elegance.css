@@ -1,0 +1,251 @@
+/* ===========================
+   Brass Elegance Theme
+   =========================== */
+[data-theme='brass-elegance'] {
+	/* --------------------------
+     Typography
+     -------------------------- */
+	/* Base Font Settings */
+	--text-scaling: 1.067;
+	--base-font-color: var(--color-surface-950); /* #614E38 */
+	--base-font-color-dark: var(--color-surface-50); /* #FFFFFF */
+	--base-font-family:
+		'EB Garamond Variable', Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+	--base-font-size: inherit;
+	--base-line-height: inherit;
+	--base-font-weight: normal;
+	--base-font-style: normal;
+	--base-letter-spacing: 0em;
+
+	/* Heading Font Settings */
+	--heading-font-color: inherit;
+	--heading-font-color-dark: inherit;
+	--heading-font-family: 'Grenze Gotisch Variable';
+	--heading-font-weight: bold;
+	--heading-font-style: normal;
+	--heading-letter-spacing: inherit;
+
+	/* Anchor/Link Font Settings */
+	--anchor-font-color: var(--color-primary-500); /* #D9BC9F */
+	--anchor-font-color-dark: var(--color-primary-500); /* #D9BC9F */
+	--anchor-font-family: inherit;
+	--anchor-font-size: inherit;
+	--anchor-line-height: inherit;
+	--anchor-font-weight: inherit;
+	--anchor-font-style: inherit;
+	--anchor-letter-spacing: inherit;
+	--anchor-text-decoration: none;
+	--anchor-text-decoration-hover: underline;
+	--anchor-text-decoration-active: none;
+	--anchor-text-decoration-focus: none;
+
+	/* --------------------------
+     Layout & Structure
+     -------------------------- */
+	--spacing: 0.25rem;
+	--radius-base: 9999rem;
+	--radius-container: 1.5rem;
+	--default-border-width: 1px;
+	--default-divide-width: 1px;
+	--default-ring-width: 1px;
+	--body-background-color: var(--color-surface-50); /* #FFFFFF */
+	--body-background-color-dark: var(--color-surface-950); /* #614E38 */
+
+	/* --------------------------
+     Color Schemes
+     -------------------------- */
+	/* Primary Colors Regal Yellow */
+	--color-primary-50: oklch(98.69% 0.07 107.58deg);
+	--color-primary-100: oklch(95.76% 0.09 102.19deg);
+	--color-primary-200: oklch(92.97% 0.1 97.9deg);
+	--color-primary-300: oklch(90.34% 0.12 95.81deg);
+	--color-primary-400: oklch(87.66% 0.13 92.88deg);
+	--color-primary-500: oklch(84.96% 0.15 90.48deg);
+	--color-primary-600: oklch(77.7% 0.14 90.38deg);
+	--color-primary-700: oklch(70.28% 0.13 90.18deg);
+	--color-primary-800: oklch(62.34% 0.12 89.77deg);
+	--color-primary-900: oklch(54.49% 0.11 89.08deg);
+	--color-primary-950: oklch(46.35% 0.09 88.03deg);
+	/* Primary Contrast Colors */
+	--color-primary-contrast-dark: var(--color-primary-950);
+	--color-primary-contrast-light: var(--color-primary-50);
+	--color-primary-contrast-50: var(--color-primary-contrast-dark);
+	--color-primary-contrast-100: var(--color-primary-contrast-dark);
+	--color-primary-contrast-200: var(--color-primary-contrast-dark);
+	--color-primary-contrast-300: var(--color-primary-contrast-dark);
+	--color-primary-contrast-400: var(--color-primary-contrast-dark);
+	--color-primary-contrast-500: var(--color-primary-contrast-dark);
+	--color-primary-contrast-600: var(--color-primary-contrast-dark);
+	--color-primary-contrast-700: var(--color-primary-contrast-dark);
+	--color-primary-contrast-800: var(--color-primary-contrast-dark);
+	--color-primary-contrast-900: var(--color-primary-contrast-light);
+	--color-primary-contrast-950: var(--color-primary-contrast-light);
+	/* Secondary Colors (Red Wiine) */
+	--color-secondary-50: oklch(78.62% 0.13 4.34deg); /* #EAB0A2 */
+	--color-secondary-100: oklch(71.07% 0.13 3.4deg); /* #D6948B */
+	--color-secondary-200: oklch(63.37% 0.13 3.22deg); /* #C07873 */
+	--color-secondary-300: oklch(55.72% 0.13 3deg); /* #b04e6c */
+	--color-secondary-400: oklch(47.81% 0.13 3.5deg); /* #914748 */
+	--color-secondary-500: oklch(39.98% 0.13 4.23deg); /* #7C1E3F */
+	--color-secondary-600: oklch(35.64% 0.12 6.51deg); /* #6C1B37 */
+	--color-secondary-700: oklch(31.21% 0.1 8.63deg); /* #5D1830 */
+	--color-secondary-800: oklch(26.7% 0.09 13.12deg); /* #4F152A */
+	--color-secondary-900: oklch(21.85% 0.07 17.42deg); /* #411225 */
+	--color-secondary-950: oklch(16.09% 0.07 29.23deg); /* #330E1F */
+
+	/* Secondary Contrast Colors */
+	--color-secondary-contrast-dark: var(--color-secondary-950); /* #211010 */
+	--color-secondary-contrast-light: var(--color-secondary-50); /* #DCAA98 */
+	--color-secondary-contrast-50: var(--color-secondary-contrast-dark); /* #211010 */
+	--color-secondary-contrast-100: var(--color-secondary-contrast-dark); /* #211010 */
+	--color-secondary-contrast-200: var(--color-secondary-contrast-dark); /* #211010 */
+	--color-secondary-contrast-300: var(--color-secondary-contrast-dark); /* #211010 */
+	--color-secondary-contrast-400: var(--color-secondary-contrast-light); /* #DCAA98 */
+	--color-secondary-contrast-500: var(--color-secondary-contrast-light); /* #DCAA98 */
+	--color-secondary-contrast-600: var(--color-secondary-contrast-light); /* #DCAA98 */
+	--color-secondary-contrast-700: var(--color-secondary-contrast-light); /* #DCAA98 */
+	--color-secondary-contrast-800: var(--color-secondary-contrast-light); /* #DCAA98 */
+	--color-secondary-contrast-900: var(--color-secondary-contrast-light); /* #DCAA98 */
+	--color-secondary-contrast-950: var(--color-secondary-contrast-light); /* #DCAA98 */
+
+	/* Tertiary Colors Antique Brass*/
+	--color-tertiary-50: oklch(99.78% 0.01 106.47deg);
+	--color-tertiary-100: oklch(95.11% 0.02 84.57deg);
+	--color-tertiary-200: oklch(90.36% 0.03 78.65deg);
+	--color-tertiary-300: oklch(85.45% 0.05 73.26deg);
+	--color-tertiary-400: oklch(80.65% 0.06 71.72deg);
+	--color-tertiary-500: oklch(75.93% 0.08 70.3deg);
+	--color-tertiary-600: oklch(68.73% 0.07 70.92deg);
+	--color-tertiary-700: oklch(61.24% 0.07 72.32deg);
+	--color-tertiary-800: oklch(53.41% 0.07 71.93deg);
+	--color-tertiary-900: oklch(45.43% 0.07 73.01deg);
+	--color-tertiary-950: oklch(37.26% 0.07 72.33deg);
+	/* Tertiary Contrast Colors */
+	--color-tertiary-contrast-dark: var(--color-tertiary-950);
+	--color-tertiary-contrast-light: var(--color-tertiary-50);
+	--color-tertiary-contrast-50: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-100: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-200: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-300: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-400: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-500: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-600: var(--color-tertiary-contrast-dark);
+	--color-tertiary-contrast-700: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-800: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-900: var(--color-tertiary-contrast-light);
+	--color-tertiary-contrast-950: var(--color-tertiary-contrast-light);
+	/* --------------------------
+     Utility Colors
+     -------------------------- */
+	/* Success Colors (Teal/Green tones) */
+	--color-success-50: oklch(92.31% 0.09 184.94deg); /* #D6F2F4 */
+	--color-success-100: oklch(84.76% 0.09 185.61deg); /* #AEE4E7 */
+	--color-success-200: oklch(77.04% 0.09 186.28deg); /* #86D5D9 */
+	--color-success-300: oklch(69.44% 0.09 185.05deg); /* #60C5CA */
+	--color-success-400: oklch(61.48% 0.09 185.42deg); /* #37B4BB */
+	--color-success-500: oklch(53.44% 0.09 185.52deg); /* #0AA3AB */
+	--color-success-600: oklch(47.12% 0.08 182.82deg); /* #008C93 */
+	--color-success-700: oklch(40.62% 0.07 180.51deg); /* #00747A */
+	--color-success-800: oklch(33.53% 0.06 176.77deg); /* #005B60 */
+	--color-success-900: oklch(26.36% 0.05 171.38deg); /* #004347 */
+	--color-success-950: oklch(18.48% 0.04 162.16deg); /* #002B2D */
+
+	/* Success Contrast Colors */
+	--color-success-contrast-dark: var(--color-success-950); /* #002B2D */
+	--color-success-contrast-light: var(--color-success-50); /* #D6F2F4 */
+	--color-success-contrast-50: var(--color-success-contrast-dark); /* #002B2D */
+	--color-success-contrast-100: var(--color-success-contrast-dark); /* #002B2D */
+	--color-success-contrast-200: var(--color-success-contrast-dark); /* #002B2D */
+	--color-success-contrast-300: var(--color-success-contrast-dark); /* #002B2D */
+	--color-success-contrast-400: var(--color-success-contrast-dark); /* #002B2D */
+	--color-success-contrast-500: var(--color-success-contrast-light); /* #D6F2F4 */
+	--color-success-contrast-600: var(--color-success-contrast-light); /* #D6F2F4 */
+	--color-success-contrast-700: var(--color-success-contrast-light); /* #D6F2F4 */
+	--color-success-contrast-800: var(--color-success-contrast-light); /* #D6F2F4 */
+	--color-success-contrast-900: var(--color-success-contrast-light); /* #D6F2F4 */
+	--color-success-contrast-950: var(--color-success-contrast-light); /* #D6F2F4 */
+
+	/* Warning Colors (Yellow/Gold tones) */
+	--color-warning-50: oklch(98.69% 0.07 107.58deg); /* #FAFCE6 */
+	--color-warning-100: oklch(95.76% 0.09 102.19deg); /* #F5F8C7 */
+	--color-warning-200: oklch(92.97% 0.1 97.9deg); /* #EFF3A9 */
+	--color-warning-300: oklch(90.34% 0.12 95.81deg); /* #E9ED8C */
+	--color-warning-400: oklch(87.66% 0.13 92.88deg); /* #E2E76F */
+	--color-warning-500: oklch(84.96% 0.15 90.48deg); /* #DBE052 */
+	--color-warning-600: oklch(77.7% 0.14 90.38deg); /* #C5CA3E */
+	--color-warning-700: oklch(70.28% 0.13 90.18deg); /* #ADB32C */
+	--color-warning-800: oklch(62.34% 0.12 89.77deg); /* #939A1D */
+	--color-warning-900: oklch(54.49% 0.11 89.08deg); /* #7A8012 */
+	--color-warning-950: oklch(46.35% 0.09 88.03deg); /* #626709 */
+
+	/* Warning Contrast Colors */
+	--color-warning-contrast-dark: var(--color-warning-950); /* #626709 */
+	--color-warning-contrast-light: var(--color-warning-50); /* #FAFCE6 */
+	--color-warning-contrast-50: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-100: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-200: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-300: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-400: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-500: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-600: var(--color-warning-contrast-dark); /* #626709 */
+	--color-warning-contrast-700: var(--color-warning-contrast-light); /* #FAFCE6 */
+	--color-warning-contrast-800: var(--color-warning-contrast-light); /* #FAFCE6 */
+	--color-warning-contrast-900: var(--color-warning-contrast-light); /* #FAFCE6 */
+	--color-warning-contrast-950: var(--color-warning-contrast-light); /* #FAFCE6 */
+
+	/* Error Colors (Red/Rust tones) */
+	--color-error-50: oklch(100% 0 none); /* #FFFFFF */
+	--color-error-100: oklch(95.66% 0.02 17.57deg); /* #F8E8E0 */
+	--color-error-200: oklch(91.36% 0.04 17.91deg); /* #F1D1C1 */
+	--color-error-300: oklch(87.2% 0.06 21.04deg); /* #E9BA9D */
+	--color-error-400: oklch(83.06% 0.08 20.84deg); /* #E0A27C */
+	--color-error-500: oklch(79.04% 0.1 21.07deg); /* #D68A5B */
+	--color-error-600: oklch(71.56% 0.1 20.58deg); /* #C07044 */
+	--color-error-700: oklch(64.03% 0.1 20.17deg); /* #A9552E */
+	--color-error-800: oklch(56.37% 0.1 20.58deg); /* #923C1D */
+	--color-error-900: oklch(48.48% 0.1 20.5deg); /* #792412 */
+	--color-error-950: oklch(40.26% 0.1 20.78deg); /* #631108 */
+
+	/* Error Contrast Colors */
+	--color-error-contrast-dark: var(--color-error-950); /* #631108 */
+	--color-error-contrast-light: var(--color-error-50); /* #FFFFFF */
+	--color-error-contrast-50: var(--color-error-contrast-dark); /* #631108 */
+	--color-error-contrast-100: var(--color-error-contrast-dark); /* #631108 */
+	--color-error-contrast-200: var(--color-error-contrast-dark); /* #631108 */
+	--color-error-contrast-300: var(--color-error-contrast-dark); /* #631108 */
+	--color-error-contrast-400: var(--color-error-contrast-dark); /* #631108 */
+	--color-error-contrast-500: var(--color-error-contrast-dark); /* #631108 */
+	--color-error-contrast-600: var(--color-error-contrast-light); /* #FFFFFF */
+	--color-error-contrast-700: var(--color-error-contrast-light); /* #FFFFFF */
+	--color-error-contrast-800: var(--color-error-contrast-light); /* #FFFFFF */
+	--color-error-contrast-900: var(--color-error-contrast-light); /* #FFFFFF */
+	--color-error-contrast-950: var(--color-error-contrast-light); /* #FFFFFF */
+
+	/* Surface Colors (Neutral/Base tones) */
+	--color-surface-50: oklch(100% 0 none); /* #FFFFFF */
+	--color-surface-100: oklch(95.46% 0.01 67.74deg); /* #F5F0E4 */
+	--color-surface-200: oklch(91.11% 0.02 70.52deg); /* #EBE0C9 */
+	--color-surface-300: oklch(86.41% 0.03 71.43deg); /* #E0CFAD */
+	--color-surface-400: oklch(81.97% 0.03 71.83deg); /* #D5BF93 */
+	--color-surface-500: oklch(77.27% 0.04 70.69deg); /* #C8AD77 */
+	--color-surface-600: oklch(69.84% 0.04 70.78deg); /* #B3975F */
+	--color-surface-700: oklch(62.51% 0.04 72deg); /* #9D8049 */
+	--color-surface-800: oklch(54.68% 0.04 70.91deg); /* #866A35 */
+	--color-surface-900: oklch(46.87% 0.04 72.15deg); /* #6F5525 */
+	--color-surface-950: oklch(38.39% 0.04 72.03deg); /* #574218 */
+
+	/* Surface Contrast Colors */
+	--color-surface-contrast-dark: var(--color-surface-950); /* #574218 */
+	--color-surface-contrast-light: var(--color-surface-50); /* #FFFFFF */
+	--color-surface-contrast-50: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-100: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-200: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-300: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-400: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-500: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-600: var(--color-surface-contrast-dark); /* #574218 */
+	--color-surface-contrast-700: var(--color-surface-contrast-light); /* #FFFFFF */
+	--color-surface-contrast-800: var(--color-surface-contrast-light); /* #FFFFFF */
+	--color-surface-contrast-900: var(--color-surface-contrast-light); /* #FFFFFF */
+	--color-surface-contrast-950: var(--color-surface-contrast-light); /* #FFFFFF */
+}
