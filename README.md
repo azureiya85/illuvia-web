@@ -1,6 +1,5 @@
 # Illuvia: The Clockwork Age
 
-
 A digital setting guide for Savage Worlds Adventure Edition (SWADE) that blends clockpunk science with Renaissance fantasy. Explore a world where mechanical marvels meet magical creatures, where humans forge their destinies alongside fantasy creatures such as elves, dwarves, halflings, sentient automaton, and others.
 
 ## 🌍 About
@@ -11,7 +10,7 @@ Illuvia is a science-fantasy setting inspired by the cultural and technological 
 - New Edges, Hindrances, and Powers
 - Comprehensive lore and worldbuilding
 - Character options for diverse ancestries
-- CLokwork gear and mechanical wonders
+- Clokwork gear and mechanical wonders
 
 Explore themes of rebellion, order versus chaos, the price of progress, and the ethics of science—all infused with Renaissance optimism about human potential.
 
@@ -32,6 +31,7 @@ Explore themes of rebellion, order versus chaos, the price of progress, and the 
 ## 📊 Current Status
 
 The project is currently in the wireframing stage:
+
 - Basic layout structure implemented
 - Placeholder components in place
 - Dummy data modules for content structure
@@ -40,24 +40,26 @@ The project is currently in the wireframing stage:
 ## 🗺️ Roadmap
 
 ### Phase 1: Foundation (Current)
+
 - ✅ Wireframe core layouts
 - ✅ Establish design system
 - ✅ Set up component architecture
 
 ### Phase 2: Interactivity & SEO
-- 🔲 Interactive character builder
+
 - 🔲 Dynamic rules reference system
-- 🔲 Search functionality
 - 🔲 SEO optimization
 - 🔲 Responsive design refinement
 
 ### Phase 3: Content Population
+
 - 🔲 Basic rules adaptation
 - 🔲 Advanced rules modules
 - 🔲 Character options (Edges, Hindrances, Powers)
 - 🔲 Setting lore and worldbuilding
 
 ### Phase 4: Polish & Launch
+
 - 🔲 Performance optimization
 - 🔲 Accessibility improvements
 - 🔲 Community feedback integration
@@ -82,11 +84,10 @@ npm run preview
 
 ## 📜 License
 
-This project references the Savage Worlds game system, available from Pinnacle Entertainment Group at [www.peginc.com](https://www.peginc.com). 
+This project references the Savage Worlds game system, available from Pinnacle Entertainment Group at [www.peginc.com](https://www.peginc.com).
 
 **Disclaimer:**
 
-*"This is an unofficial fan work and is not affiliated with or endorsed by Pinnacle Entertainment Group. Savage Worlds and all associated trademarks are the property of Pinnacle Entertainment Group."*
+_"This is an unofficial fan work and is not affiliated with or endorsed by Pinnacle Entertainment Group. Savage Worlds and all associated trademarks are the property of Pinnacle Entertainment Group."_
 
 Original content is licensed under [MIT License](LICENSE).
-
