@@ -6,6 +6,7 @@
 	import PowerSection from '$lib/components/templates/PowerSection.svelte';
 	import QuoteSection from '$lib/components/templates/QouteSection.svelte';
 	import LocationSection from '$lib/components/templates/LocationSection.svelte';
+	import AdvRules from '$lib/components/templates/AdvRules.svelte';
 	let showHero = $state(false);
 
 	onMount(() => {
@@ -25,4 +26,5 @@
 	<PowerSection />
 	<QuoteSection />
 	<LocationSection />
+	<AdvRules />
 {/if}
