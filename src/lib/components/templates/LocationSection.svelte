@@ -67,9 +67,16 @@
 				<div
 					class="group relative h-[38rem] w-[28rem] flex-shrink-0 cursor-pointer snap-center overflow-hidden transition-all duration-300 hover:shadow-xl"
 				>
+					<!-- Background Image -->
+					<img
+						src={nation.image}
+						alt={nation.nation}
+						class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+					/>
+
 					<!-- Background overlay that dims on hover -->
 					<div
-						class="from-primary-800 to-primary-900 absolute inset-0 bg-gradient-to-b transition-all duration-500 group-hover:bg-black/10"
+						class="absolute inset-0 bg-gradient-to-b transition-all duration-500 group-hover:bg-black/30"
 					></div>
 
 					<!-- Container for Nation Name & Description -->

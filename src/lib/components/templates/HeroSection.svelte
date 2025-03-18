@@ -13,7 +13,7 @@
 	<div class="absolute inset-0 z-0 bg-neutral-800 opacity-80">
 		<!-- Placeholder for background image -->
 		<div
-			class="from-secondary-900 to-primary-900 absolute inset-0 bg-gradient-to-b opacity-80"
+			class="absolute inset-0 bg-gradient-to-b bg-[url('/images/hero-bg.avif')] bg-cover bg-center opacity-80"
 		></div>
 	</div>
 

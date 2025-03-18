@@ -32,7 +32,9 @@
 		></div>
 		<div class="relative h-full w-full">
 			<!-- Image placeholder -->
-			<div class="from-primary-700 absolute inset-0 z-0 bg-gradient-to-r to-transparent"></div>
+			<div
+				class="absolute inset-0 z-0 bg-gradient-to-r bg-[url('/images/clockwork-gnome.avif')] to-transparent bg-cover"
+			></div>
 
 			<!-- Overlay gradient for fade effect -->
 			<div

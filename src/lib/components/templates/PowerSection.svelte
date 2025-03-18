@@ -32,7 +32,9 @@
 		></div>
 		<div class="relative h-full w-full">
 			<!-- Image placeholder -->
-			<div class="from-primary-700 absolute inset-0 z-0 bg-gradient-to-l to-transparent"></div>
+			<div
+				class="absolute inset-0 z-0 bg-gradient-to-l bg-[url('https://cdna.artstation.com/p/assets/images/images/004/245/630/large/marcel-mercado-marcel-mercado-d-d-clockwork.jpg?1481681645')] to-transparent bg-cover bg-center"
+			></div>
 
 			<!-- Overlay gradient for fade effect -->
 			<div

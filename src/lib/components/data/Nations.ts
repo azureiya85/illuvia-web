@@ -9,51 +9,55 @@ export interface Nation {
 export const nations: Nation[] = [
 	{
 		id: 1,
-		nation: 'Nation A',
+		nation: 'Republic of Tharcia',
 		shortDesc: 'This is a short description for Nation A',
 		longDesc: 'This is a long description for Nation A',
-		image: 'image-url-1'
+		image:
+			'https://cdnb.artstation.com/p/assets/images/images/026/402/275/large/max-bedulenko-greek-1.jpg?1588689478'
 	},
 	{
 		id: 2,
-		nation: 'Nation B',
+		nation: 'Principality of Yuen',
 		shortDesc: 'This is a short description for Nation B',
 		longDesc: 'This is a long description for Nation B',
-		image: 'image-url-2'
+		image:
+			'https://cdnb.artstation.com/p/assets/images/images/042/462/583/large/shuai-fu-2-08.jpg?1634583886'
 	},
 	{
 		id: 3,
-		nation: 'Nation C',
+		nation: 'Avandira Sultanate',
 		shortDesc: 'This is a short description for Nation C',
 		longDesc: 'This is a long description for Nation C',
-		image: 'image-url-3'
+		image:
+			'https://cdnb.artstation.com/p/assets/images/images/009/924/507/large/moa-h-44237932.jpg?1521608946'
 	},
 	{
 		id: 4,
-		nation: 'Nation D',
+		nation: 'Lunaveira Empire',
 		shortDesc: 'This is a short description for Nation D',
 		longDesc: 'This is a long description for Nation D',
-		image: 'image-url-4'
+		image: '/images/lunaveira-city.avif'
 	},
 	{
 		id: 5,
-		nation: 'Nation E',
+		nation: 'Hin Boldahr',
 		shortDesc: 'This is a short description for Nation E',
 		longDesc: 'This is a long description for Nation E',
-		image: 'image-url-5'
+		image: '/images/boldahr-city.avif'
 	},
 	{
 		id: 6,
-		nation: 'Nation F',
+		nation: 'Triburones Archipelago',
 		shortDesc: 'This is a short description for Nation F',
 		longDesc: 'This is a long description for Nation F',
-		image: 'image-url-6'
+		image: '/images/triburones-city.avif'
 	},
 	{
 		id: 7,
-		nation: 'Nation G',
+		nation: 'The Wyld Plains',
 		shortDesc: 'This is a short description for Nation G',
 		longDesc: 'This is a long description for Nation G',
-		image: 'image-url-7'
+		image:
+			'https://cdna.artstation.com/p/assets/images/images/008/499/820/large/j-otto-szatmari-newyork-002env-empyre-jottoszatmari01.jpg?1570473607'
 	}
 ];
