@@ -18,11 +18,11 @@
 	</div>
 
 	<!-- Content -->
-	<div class="relative z-10 mx-auto max-w-2xl px-4 text-center">
+	<div class="relative z-10 mx-auto max-w-3xl px-4 text-center">
 		<h1 class="text-primary-50">Illuvia</h1>
-		<h4 class="text-primary-500 mb-8">The Clockwork Age</h4>
+		<h3 class="text-primary-500 mb-8">The Clockwork Age</h3>
 
-		<p class="mb-10 text-2xl text-white">
+		<p class="mb-10 text-3xl font-medium text-white">
 			Dive into a world of Renaissance science, gunpowder, <br />
 			and fantasy. Where everyone are racing against time to <br />
 			fulfill their greatest ambition.<br />

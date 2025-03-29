@@ -19,7 +19,7 @@ export const advRules: AdvRules[] = [
 		id: 2,
 		title: 'Hexcrawl',
 		shortDesc:
-			'Major theme in Illuvia is exploring the unknown, either scientific pursuit, facing eldritch horror that lurks beneath the surface of Illuvia or simply travelling through uncharted lands. Using hexcrawl can communicate the feeling of a perilious and exciting adventures',
+			'Major theme in Illuvia is exploring the unknown, either scientific pursuit, facing eldritch horror that lurks beneath the surface of Illuvia or simply travelling through uncharted lands. Hexcrawl communicate the feeling of a perilious and exciting adventures',
 		longDesc: 'This is a long description for Nation B',
 		image: 'https://i.pinimg.com/1200x/ae/48/76/ae4876ccebfb6bda9c28596fcc6630cd.jpg'
 	},

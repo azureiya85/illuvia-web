@@ -24,7 +24,7 @@
 	function scrollLeft() {
 		if (scrollContainer) {
 			scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
-			setTimeout(updateScrollState, 300); // Ensure state updates after scroll
+			setTimeout(updateScrollState, 300);
 		}
 	}
 
@@ -71,26 +71,23 @@
 					<img
 						src={nation.image}
 						alt={nation.nation}
-						class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+						class="absolute inset-0 h-full w-full bg-black/10 object-cover transition-transform duration-500 group-hover:scale-105"
 					/>
 
 					<!-- Background overlay that dims on hover -->
 					<div
 						class="absolute inset-0 bg-gradient-to-b transition-all duration-500 group-hover:bg-black/30"
 					></div>
-
-					<!-- Container for Nation Name & Description -->
-					<div
-						class="absolute bottom-0 w-full p-6 transition-all duration-500 group-hover:bottom-[30%]"
-					>
-						<!-- Nation Name -->
-						<h5 class="mb-4 text-2xl font-semibold text-white transition-all duration-500">
+					<!-- Title & Description That Moves Up On Hover -->
+					<div>
+						<h5
+							class="absolute bottom-0 mb-4 w-full p-4 text-2xl font-bold text-white transition-all duration-500 group-hover:bottom-48"
+						>
 							{nation.nation}
 						</h5>
 
-						<!-- Short Description (Hidden by default, smoothly revealed on hover) -->
 						<p
-							class="bg-primary-800 p-4 text-xl text-white opacity-0 transition-all duration-500 group-hover:opacity-100"
+							class="absolute -bottom-10 w-full p-4 text-xl font-medium text-white opacity-0 transition-all duration-500 group-hover:bottom-0 group-hover:opacity-100"
 						>
 							{nation.shortDesc}
 						</p>

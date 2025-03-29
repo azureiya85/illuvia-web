@@ -38,7 +38,7 @@
 						class="absolute bottom-0 w-full transform transition-transform duration-500 group-hover:-translate-y-64"
 					>
 						<div class="p-6">
-							<h5 class="text-2xl font-semibold text-white transition-all duration-500">
+							<h5 class="text-2xl font-bold text-white transition-all duration-500">
 								{rule.title}
 							</h5>
 						</div>
@@ -49,7 +49,7 @@
 						class="absolute bottom-0 w-full translate-y-full transform transition-all duration-500 group-hover:translate-y-0"
 					>
 						<div class="p-6">
-							<p class="text-xl text-white">
+							<p class="text-xl font-medium text-white">
 								{rule.shortDesc}
 							</p>
 						</div>
@@ -79,7 +79,7 @@
 						class="absolute bottom-0 w-full transform transition-transform duration-500 group-hover:-translate-y-44"
 					>
 						<div class="p-4">
-							<h5 class="text-2xl font-semibold text-white transition-all duration-500">
+							<h5 class="text-2xl font-bold text-white transition-all duration-500">
 								{rule.title}
 							</h5>
 						</div>
@@ -90,7 +90,7 @@
 						class="absolute bottom-0 w-full translate-y-full transform transition-all duration-500 group-hover:translate-y-0"
 					>
 						<div class="p-4">
-							<p class="text-xl text-white">
+							<p class="text-medium text-xl text-white">
 								{rule.shortDesc}
 							</p>
 						</div>
