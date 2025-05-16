@@ -1,14 +1,11 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import { Tabs } from '@skeletonlabs/skeleton-svelte';
-	// Ensure correct import paths
 	import { edgesData, type Edge, type EdgeCategory, edgeCategoryColors } from '$lib/components/data/NewEdges';
 	import { hindrancesData, type Hindrance, type HindranceType, hindranceTypeColors } from '$lib/components/data/NewHindrances';
-
 	import IconSword from '@lucide/svelte/icons/swords';
 	import IconShieldOff from '@lucide/svelte/icons/shield-off';
     import IconX from '@lucide/svelte/icons/x';
-    import IconAlertTriangle from '@lucide/svelte/icons/alert-triangle';
 
 	let activeTab = $state('edges');
 
@@ -77,19 +74,16 @@
     }
 
     // Derived state for modal colors based on the type of inspectedItem
-    // This is a cleaner way to handle the conditional logic for colors
     let modalDisplayConfig = $derived(() => {
         if (!inspectedItem) return null;
 
         if (isEdge(inspectedItem)) {
-            // TypeScript knows inspectedItem is an Edge here
             return {
                 colors: edgeCategoryColors[inspectedItem.category] || edgeCategoryColors.Background,
                 isEdge: true,
                 item: inspectedItem // Now item is correctly typed as Edge
             };
         } else {
-            // TypeScript knows inspectedItem is a Hindrance here
             return {
                 colors: hindranceTypeColors[inspectedItem.type] || hindranceTypeColors.Minor,
                 isEdge: false,
@@ -104,7 +98,7 @@
 
 
 <section
-    class="w-full min-h-screen py-16 md:py-24 relative transition-all duration-300"
+    class="bg-surface-500 dark:bg-surface-500 w-full min-h-screen  relative transition-all duration-300"
     class:filter={inspectedItem ? 'blur-sm brightness-75 dark:brightness-50' : 'none'}
     class:pointer-events-none={inspectedItem}
     class:bg-surface-50-900-token={!inspectedItem}
@@ -112,14 +106,13 @@
     in:fade={{ duration: 300}}
 >
 	<!-- Header Section -->
-	<div class="relative mb-12 w-full shadow-xl md:mb-20">
-		<div class="absolute inset-0 z-0 h-[300px] md:h-[350px]">
-			<img src="/images/edges-hindrances-bg.avif" alt="Scrolls, cards, and adventuring gear" class="h-full w-full object-cover object-center opacity-70 dark:opacity-50"/>
+	<div class="pt-24 bg-surface-500 dark:bg-surface-500 relative mb-12 w-full shadow-xl md:mb-20">
+		<div class="absolute inset-0 z-0 h-[500px] md:h-[550px]">
+			<img src="/images/clockpunk-edges.avif" alt="Scrolls, cards, and adventuring gear" class="h-full w-full object-cover object-center "/>
 		</div>
-		<div class="absolute inset-0 z-10 h-[300px] md:h-[350px] bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+		<div class="absolute inset-0 z-10 h-[500] md:h-[550px] bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
 		<div class="relative z-20 mx-auto flex h-[300px] max-w-4xl flex-col items-center justify-center px-4 text-center md:h-[350px]">
 			<div>
-				<h2 class="h2 mb-4 text-secondary-400 dark:text-secondary-300">Traits & Quirks</h2>
 				<h1 class="h1 text-primary-50 mb-6">Edges & Hindrances</h1>
 				<p class="text-lg text-primary-100 dark:text-primary-200 md:text-xl">
 					Explore special abilities (Edges) that define your hero's strengths, and compelling flaws (Hindrances) that add depth and challenge.
@@ -129,7 +122,7 @@
 	</div>
 
 	<!-- Main Content Area with Tabs -->
-	<div class=" mx-auto max-w-8xl px-12">
+	<div class="pt-12 bg-surface-500 dark:bg-surface-500 mx-auto max-w-8xl px-12">
 		<Tabs
             value={activeTab}
             onValueChange={(e) => (activeTab = e.value)}
@@ -152,7 +145,7 @@
 
 			{#snippet content()}
 				<Tabs.Panel value="edges" classes="min-h-[50vh]">
-					<h3 class="h3 mb-6 text-center text-primary-600 dark:text-primary-400">Available Edges</h3>
+					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">New Edges</h3>
                     <div class="mb-8 flex flex-wrap justify-center gap-2">
                         <button type="button" class="btn {selectedEdgeCategory === 'All' ? 'variant-filled-primary' : 'variant-ghost-surface'}" onclick={() => selectedEdgeCategory = 'All'}>All</button>
                         {#each edgeCategories as category}
@@ -167,7 +160,7 @@
                         {/each}
                     </div>
 
-                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pb-12">
                         {#if filteredEdges.length > 0}
                             {#each filteredEdges as edge (edge.id)}
                                 {@const colors = edgeCategoryColors[edge.category] || edgeCategoryColors.Background}
@@ -181,7 +174,7 @@
                 inspectItem(edge);
             }
         }}
-        class="edge-card {colors.bg} cursor-pointer" 
+        class="mt-8 edge-card {colors.bg} cursor-pointer hover:border hover:border-tertiary-500 hover:scale-105 transition-all duration-300" 
         style="box-shadow: 0 0 0 1px {colors.shadowColor || 'transparent'}, 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);"
         aria-label="Inspect {edge.name}"
     >
@@ -195,7 +188,7 @@
                 <IconSword size={64} class="text-surface-500 dark:text-surface-400" />
             </div>
         {/if}
-        <article class="prose prose-sm dark:prose-invert p-4 flex-grow {colors.text}" style="background-color: rgba(0,0,0,0.05); backdrop-filter: blur(2px);">
+        <article class="text-lg prose prose-sm dark:prose-invert p-4 flex-grow {colors.text}" style="background-color: rgba(0,0,0,0.05); backdrop-filter: blur(2px);">
             {#each edge.description as p} <p>{@html p}</p> {/each}
         </article>
         <footer class="p-3 mt-auto border-t {colors.border} {colors.text} text-xs opacity-80">
@@ -211,7 +204,7 @@
 				</Tabs.Panel>
 
 				<Tabs.Panel value="hindrances" classes="min-h-[50vh]">
-					<h3 class="h3 mb-6 text-center text-error-600 dark:text-error-400">Available Hindrances</h3>
+					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">New Hindrances</h3>
 					<div class="mb-8 flex flex-wrap justify-center gap-2">
                         <button type="button" class="btn {selectedHindranceType === 'All' ? 'variant-filled-error' : 'variant-ghost-surface'}" onclick={() => selectedHindranceType = 'All'}>All</button>
                         {#each hindranceTypes as typeName}
@@ -225,7 +218,7 @@
                             </button>
                         {/each}
                     </div>
-                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 min-h-screen pb-12">
                         {#if filteredHindrances.length > 0}
                            {#each filteredHindrances as hindrance (hindrance.id)}
     {@const colors = hindranceTypeColors[hindrance.type] || hindranceTypeColors.Minor}
@@ -239,7 +232,7 @@
                 inspectItem(hindrance);
             }
         }}
-        class="edge-card {colors.bg} cursor-pointer"
+        class="edge-card {colors.bg} cursor-pointer  hover:border hover:border-tertiary-500 hover:scale-105 transition-all duration-300"
         style="box-shadow: 0 0 0 1px {colors.shadowColor || 'transparent'}, 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);"
         aria-label="Inspect {hindrance.name}"
     >
@@ -253,7 +246,7 @@
                 <IconShieldOff size={64} class="text-surface-500 dark:text-surface-400" />
             </div>
         {/if}
-        <article class="prose prose-sm dark:prose-invert p-4 flex-grow {colors.text}" style="background-color: rgba(0,0,0,0.05); backdrop-filter: blur(2px);">
+        <article class="text-lg prose prose-sm dark:prose-invert p-4 flex-grow {colors.text}" style="background-color: rgba(0,0,0,0.05); backdrop-filter: blur(2px);">
             {#each hindrance.description as p} <p>{@html p}</p> {/each}
         </article>
         <footer class="p-3 mt-auto border-t {colors.border} {colors.text} text-xs opacity-80">
@@ -319,7 +312,7 @@
                     </div>
                 {/if}
 
-                <article class="prose dark:prose-invert p-5 flex-grow overflow-y-auto max-h-[calc(80vh-200px)] {modalColors.text} bg-black/10 dark:bg-black/20 text-sm md:text-base">
+                <article class="text-2xl prose dark:prose-invert p-5 flex-grow overflow-y-auto max-h-[calc(80vh-200px)] {modalColors.text} bg-black/10 dark:bg-black/20 text-sm md:text-base">
                     {#each currentItem.description as p}
                         <p>{@html p}</p>
                     {/each}
@@ -343,8 +336,7 @@
 
 <style lang="postcss">
 .edge-card { /* Shared style for Edge and Hindrance cards */
-    @apply flex flex-col overflow-hidden rounded-lg text-left shadow-md transition-all;
-    @apply hover:shadow-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-100-800-token focus-visible:ring-primary-500;
+    @apply flex flex-col overflow-hidden rounded-lg text-left;
 }
 
 .prose p {

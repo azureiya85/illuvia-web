@@ -50,7 +50,7 @@ export const characterCreationSteps: CreationStep[] = [
         title: 'Step 1: Envision Your Character Concept',
         content: [
             'Before diving into numbers, imagine who you want to be. Illuvia is a realm where Renaissance science, gunpowder, and vibrant fantasy collide. Think:',
-            '<ul class="list-disc ml-6 my-2 space-y-1"><li><strong>A World of Daring:</strong> Inspired by the Golden Age of Piracy, the Age of Revolution, and the grit of the Old West.</li><li><strong>Possible Paths:</strong> Swashbuckling Pirate, Curious Inventor, Master Engineer, Restless Aristocrat, Runaway Slave, Cunning Master Thief, Sharp Detective, Hardened Cowboy, Fervent Revolutionist, Intrepid Archaeologist, or an everyday individual swept into extraordinary events.</li></ul>',
+            '<ul class="list-disc ml-6 my-2 space-y-1"><li><strong>A World of Daring Adventurers:</strong> Inspired by the Golden Age of Piracy, the Age of Revolution, and the grit of the Old West.</li><li><strong>Possible Paths:</strong> Swashbuckling Pirate, Curious Inventor, Master Engineer, Restless Aristocrat, Runaway Slave, Cunning Master Thief, Sharp Detective, Hardened Cowboy, Fervent Revolutionist, Intrepid Archaeologist, or an everyday individual swept into extraordinary events.</li></ul>',
             '<em>Talk to your Game Master (GM) about the campaign and what kind of hero might thrive (or cause delightful chaos!) in their story.</em>'
         ]
     },
@@ -65,7 +65,7 @@ export const characterCreationSteps: CreationStep[] = [
         ],
         actions: [
             {
-                type: 'button', // Explicitly define type
+                type: 'button', 
                 label: 'Discover New Illuvian Ancestries',
                 icon: LucideChevronRight,
                 onClick: () => { // This will need to be handled in the component if defined here
@@ -89,7 +89,7 @@ export const characterCreationSteps: CreationStep[] = [
             {
                 type: 'link', // Explicitly define type
                 label: 'Explore Edges & Hindrances',
-                href: '/rules/edges-hindrances',
+                href: '/edges-hindrances',
                 icon: LucideChevronRight
             }
         ]

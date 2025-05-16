@@ -18,8 +18,8 @@
 				with Illuvia's core principle and main inspirations: 80's and 90's media. <br />
 				<br /> <span class="font-bold">Fast, bombastic and lethal. </span>
 			</p>
-<a href="/rules" class="flex items-center gap-2">
-  <button>
+<a href="/rules">
+  <button class="flex items-center gap-2">
     Learn The Rules
     <LucideBookOpen size={20} />
   </button>

@@ -17,11 +17,12 @@
 				automatons live amongst each others. <br /> <br /> A catfolk pirate captain who can't swim? A
 				spirit hunter kobold cowboy who is afraid of automatons? The choice is yours.
 			</p>
-
+			<a href="/characters">
 			<button class="flex items-center gap-2">
 				New Character Options
 				<LucideUsers size={20} />
 			</button>
+			</a>
 		</div>
 	</div>
 

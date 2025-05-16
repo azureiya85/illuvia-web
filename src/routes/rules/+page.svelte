@@ -26,8 +26,7 @@
 
 		<!-- Centered Content Container for Title -->
 		<div class="relative z-20 mt-24 mx-auto flex h-[400px] md:h-[450px] max-w-4xl flex-col items-center justify-center px-4 text-center">
-			<div> <!-- Inner div for easier vertical centering if needed, or direct text -->
-				<h2 class="h2 mb-4 text-secondary-400 dark:text-secondary-300">Core Rules</h2>
+			<div> 
 				<h1 class="h1 text-primary-50 mb-6">The Engine of Illuvia</h1>
 				<p class="text-xl text-primary-100 dark:text-primary-200 md:text-2xl">
 					Illuvia is powered by Savage Worlds, a game system designed for thrilling adventures and
@@ -49,18 +48,18 @@
 					<svelte:component
 						this={rule.icon}
 						class="h-10 w-10 flex-shrink-0 {rule.iconColor ||
-							'text-secondary-500 dark:text-secondary-400'}"
+							'text-secondary-500 dark:text-secondary-600'}"
 						strokeWidth={1.5}
 					/>
-					<h3 class="h3 text-secondary-700 dark:text-secondary-300 flex-grow">{rule.title}</h3>
+					<h3 class="h3 text-secondary-700 dark:text-secondary-600 flex-grow">{rule.title}</h3>
 				</div>
 
 				{#each rule.description as paragraph}
-					<p class="text-token mb-3 text-lg leading-relaxed">{@html paragraph}</p>
+					<p class="text-black text-token mb-3 text-xl leading-relaxed">{@html paragraph}</p>
 				{/each}
 
 				{#if rule.keyPoints && rule.keyPoints.length > 0}
-					<ul class="text-token mb-4 ml-5 list-disc space-y-2 text-lg">
+					<ul class="text-black text-xl text-token mb-4 ml-5 list-disc space-y-2">
 						{#each rule.keyPoints as point}
 							<li>{@html point}</li>
 						{/each}
@@ -74,18 +73,18 @@
 						<div class="mb-2 flex items-center gap-2">
 							<svelte:component
 								this={rule.whyItMattersIcon}
-								class="h-6 w-6 text-secondary-600 dark:text-secondary-400"
+								class="h-6 w-6 text-secondary-600 dark:text-secondary-600"
 							/>
-							<h4 class="h5 text-secondary-700 dark:text-secondary-300 font-semibold">
+							<h4 class="h5 text-secondary-700 dark:text-secondary-600 font-semibold">
 								Why it Matters:
 							</h4>
 						</div>
-						<p class="text-token text-base italic">{@html rule.whyItMatters}</p>
+						<p class="text-token text-lg text-black italic">{@html rule.whyItMatters}</p>
 					{:else}
-						<h4 class="h5 text-secondary-700 dark:text-secondary-300 mb-1 font-semibold">
+						<h4 class="h5 text-secondary-700 dark:text-secondary-600 mb-1 font-semibold">
 							Why it Matters:
 						</h4>
-						<p class="text-token text-base italic">{@html rule.whyItMatters}</p>
+						<p class="text-lg text-black dark:text-black italic">{@html rule.whyItMatters}</p>
 					{/if}
 				</div>
 			</div>
@@ -94,7 +93,7 @@
 
 	<!-- Concluding CTA Section -->
 	<div class="mt-16 w-full max-w-3xl text-center md:mt-24">
-		<h2 class="h2 text-primary-200 dark:text-primary-300 mb-8">Ready to Dive Deeper?</h2>
+		<h2 class="h2 text-secondary-500 dark:text-secondary-600 mb-8">Ready to Dive Deeper?</h2>
 		<div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
 			<a
 				href="/characters"
@@ -104,11 +103,11 @@
 				Character Creation
 			</a>
 			<a
-				href="/rules/advanced"
+				href="/rules/combat"
 				class="btn variant-filled-secondary flex bg-secondary-700 text-white rounded-xl items-center justify-center gap-2 text-lg"
 			>
 				<LucideBookMarked size={24} />
-				Advanced Rules
+				Combat Rules
 			</a>
 		</div>
 	</div>

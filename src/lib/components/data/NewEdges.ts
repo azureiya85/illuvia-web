@@ -26,12 +26,12 @@ export interface Edge {
 
 // --- COLOR MAPPING FOR EDGE CATEGORIES ---
 export const edgeCategoryColors: Record<EdgeCategory, { bg: string; text: string; border: string; shadowColor: string }> = {
-    Background:   { bg: 'bg-tertiary-600 dark:bg-tertiary-700',    text: 'text-green-100',   border: 'border-green-700 dark:border-green-800', shadowColor: 'rgba(22, 101, 52, 0.7)' /* Darker Green for shadow */ },
+    Background:   { bg: 'bg-tertiary-600 dark:bg-tertiary-700',    text: 'text-white',   border: 'border-green-700 dark:border-green-800', shadowColor: 'rgba(22, 101, 52, 0.7)' /* Darker Green for shadow */ },
     Combat:       { bg: 'bg-primary-950 dark:bg-primary-950',        text: 'text-red-100',       border: 'border-red-700 dark:border-red-800', shadowColor: 'rgba(185, 28, 28, 0.7)' /* Darker Red */ },
-    Leadership:   { bg: 'bg-yellow-500 dark:bg-yellow-600',  text: 'text-yellow-900 dark:text-yellow-100', border: 'border-yellow-600 dark:border-yellow-700', shadowColor: 'rgba(202, 138, 4, 0.7)' /* Darker Yellow */ },
+    Leadership:   { bg: 'bg-yellow-700 dark:bg-yellow-700',  text: 'text-yellow-900 dark:text-yellow-100', border: 'border-yellow-600 dark:border-yellow-700', shadowColor: 'rgba(202, 138, 4, 0.7)' /* Darker Yellow */ },
     Power:        { bg: 'bg-secondary-600 dark:bg-secondary-700',  text: 'text-purple-100',  border: 'border-purple-700 dark:border-purple-800', shadowColor: 'rgba(126, 34, 206, 0.7)' /* Darker Purple */ },
     Professional: { bg: 'bg-gray-500 dark:bg-gray-600',    text: 'text-gray-100 dark:text-gray-200',   border: 'border-gray-600 dark:border-gray-700', shadowColor: 'rgba(75, 85, 99, 0.7)' /* Darker Gray */ },
-    Social:       { bg: 'bg-fuchsia-700 dark:bg-fuscha-800',      text: 'text-pink-100',    border: 'border-pink-600 dark:border-pink-700', shadowColor: 'rgba(219, 39, 119, 0.7)' /* Darker Pink */ },
+    Social:       { bg: 'bg-fuchsia-900 dark:bg-fuscha-900',      text: 'text-pink-100',    border: 'border-pink-600 dark:border-pink-700', shadowColor: 'rgba(219, 39, 119, 0.7)' /* Darker Pink */ },
     Weird:        { bg: 'bg-indigo-700 dark:bg-indigo-800',  text: 'text-indigo-100',  border: 'border-indigo-600 dark:border-indigo-700', shadowColor: 'rgba(79, 70, 229, 0.7)' /* Darker Indigo */ },
     Legendary:    { bg: 'bg-stone-400 dark:bg-stone-500',    text: 'text-amber-100 dark:text-amber-100',   border: 'border-amber-500 dark:border-amber-600', shadowColor: 'rgba(217, 119, 6, 0.7)' /* Darker Amber */ },
     Naval:        { bg: 'bg-teal-700 dark:bg-teal-800',       text: 'text-sky-100',     border: 'border-sky-600 dark:border-sky-700', shadowColor: 'rgba(2, 132, 199, 0.7)' /* Darker Sky Blue */ }

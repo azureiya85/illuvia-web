@@ -60,7 +60,7 @@ export const coreRulesData: CoreRule[] = [
 	{
 		id: 'wild_die',
 		icon: LucideDices,
-		iconColor: 'text-violet-600 dark:text-violet-400',
+		iconColor: 'text-violet-600 dark:text-violet-700',
 		title: 'The Wild Die: Your Heroic Edge',
 		description: [
 			'A signature mechanic for Wild Cards! When a Wild Card makes a Trait roll, they roll their normal Trait die AND an extra six-sided die (d6) – the Wild Die.'
@@ -137,7 +137,7 @@ export const coreRulesData: CoreRule[] = [
 	{
 		id: 'bennies',
 		icon: LucideGift,
-		iconColor: 'text-green-600 dark:text-green-400',
+		iconColor: 'text-green-600 dark:text-green-700',
 		title: 'Bennies: Your Ace in the Hole!',
 		description: [
 			'Bennies (short for "benefits") are tokens (like poker chips) that give players a way to control their hero\'s fate. Players start each session with 3, and GMs award more for good play.'

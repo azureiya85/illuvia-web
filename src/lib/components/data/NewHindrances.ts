@@ -14,9 +14,9 @@ export interface Hindrance {
 // --- COLOR MAPPING FOR HINDRANCE TYPES ---
 // Using Tailwind CSS classes
 export const hindranceTypeColors: Record<HindranceType, { bg: string; text: string; border: string; shadowColor: string }> = {
-    Minor:         { bg: 'bg-blue-500 dark:bg-blue-600',      text: 'text-blue-100',   border: 'border-blue-600 dark:border-blue-700', shadowColor: 'rgba(37, 99, 235, 0.7)' /* Blue 600 */ },
-    Major:         { bg: 'bg-orange-500 dark:bg-orange-600',  text: 'text-orange-100', border: 'border-orange-600 dark:border-orange-700', shadowColor: 'rgba(234, 88, 12, 0.7)' /* Orange 600 */ },
-    'Minor/Major': { bg: 'bg-teal-500 dark:bg-teal-600',     text: 'text-teal-100',   border: 'border-teal-600 dark:border-teal-700', shadowColor: 'rgba(13, 148, 136, 0.7)' /* Teal 600 */ }
+    Minor:         { bg: 'bg-primary-950 dark:bg-primary-950',      text: 'text-primary-100',   border: 'border-primary-600 dark:border-primary-700', shadowColor: 'rgba(37, 99, 235, 0.7)' /* primary 600 */ },
+    Major:         { bg: 'bg-secondary-500 dark:bg-secondary-600',  text: 'text-white', border: 'border-secondary-600 dark:border-secondary-700', shadowColor: 'rgba(234, 88, 12, 0.7)' /* secondary 600 */ },
+    'Minor/Major': { bg: 'bg-tertiary-800 dark:bg-tertiary-800',     text: 'text-tertiary-100',   border: 'border-tertiary-600 dark:border-tertiary-700', shadowColor: 'rgba(13, 148, 136, 0.7)' /* tertiary 600 */ }
 };
 
 const placeholderImage = 'https://i.pinimg.com/1200x/0b/c6/4c/0bc64cd89ad567be76ae26ecf25d3295.jpg'; // Same placeholder as Edges for now
@@ -49,7 +49,7 @@ export const hindrancesData: Hindrance[] = [
         description: [
             "For whatever reason, this character tends to attract attention and stick in peoples’ minds. They might fidget or stutter a lot, sweat excessively (smelling strongly of garlic), gesticulate wildly while speaking at high volume, wear way too much hairspray and perfume which they constantly reapplies, or have some other kind of exaggerated mannerisms or nervous tics which make them hard to miss.",
             "Something about this decidedly unique individual is exceptionally distinctive and memorable. Witnesses usually remember them and can describe them to the cops.",
-            "They suffers a –2 penalty to Stealth when trying to blend into a crowd, witnesses can quickly identify them, and they are easily picked out in a police lineup unless they are taken great care to cover their shtick."
+            "They suffers a –2 penalty to Stertiaryth when trying to blend into a crowd, witnesses can quickly identify them, and they are easily picked out in a police lineup unless they are taken great care to cover their shtick."
         ],
         image: placeholderImage
     },

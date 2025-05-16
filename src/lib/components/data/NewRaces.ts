@@ -47,7 +47,7 @@ export const newRacesData: NewRace[] = [
             { name: 'Construct (+3)', description: '+2 to recover from Shaken; ignore 1 point of Wound penalties; don’t breathe; immune to disease and poison. Wounds are mended with the Repair skill (1 hour/Wound level, ignores Golden Hour).' },
             { name: 'Supernatural Science Oddity (-1)', description: 'The only Arcane Background available is Weird Science. They cannot benefit from organic supernatural ingredients (potions, tinctures). Their unnatural appearance often causes unease, granting the Outsider (Minor) Hindrance.' }
         ],
-        backgroundPosition: 'center 20%',
+        backgroundPosition: 'center 15%',
     },
     {
         id: 'catfolk',
@@ -76,7 +76,7 @@ export const newRacesData: NewRace[] = [
         name: 'Canides',
         icon: 'iconoir:wolf', 
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/2a/f9/6e/2af96e6b89daa6117039b4a44c6e7828.jpg',
+        image: 'https://i.pinimg.com/1200x/40/ea/18/40ea18f96b9045d12caee8834e9f7acd.jpg',
         tagline: 'Loyal hunters with an unwavering sense of community.',
         description: [
             "Coming out from the laboratory of Pavlovyshka, they wander the realm of Illuvia after the collapse of the infamous bioengineering lab. Canides are humanoid wild canines; wolves, coyotes, jackals, dholes, and wild dogs.",
@@ -89,14 +89,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Natural Weapon (Bite) (+1)', description: 'Canides have sharp teeth that make a powerful weapon; as such, they can use their bite as a natural weapon. When they hit with it, the strike deals Strength + d4.' },
             { name: 'Vow (Major) (-2)', description: 'Canides are known to be extremely loyal, either to a cause, a code, a clan, an organization, or a particular person, sometimes to a fault. Gain Vow (Major) Hindrance.' }
         ],
-        backgroundPosition: 'center 35%'
+        backgroundPosition: 'center 25%'
     },
     {
         id: 'cephalios',
         name: 'Cephalios',
         icon: `hugeicons:octopus`, 
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/57/51/98/5751984f3596261935d16804a29fefdb.jpg',
+        image: 'https://i.pinimg.com/1200x/c5/cf/ad/c5cfadb1f4bfbe328ed3eb25b982ede5.jpg',
         tagline: 'Sea dwellers with mysterious origins and arcane power.',
         description: [
             "The origin of Cephalios is up for much debate, though they claim to be native of Triburones Archipelago, which contradicts what the Triton, Sea Elf, and Tabaxi claims. Cephalios only showed themselves a couple of decades after the Triton, Sea Elf, and Tabaxi settled there, claiming they only resurfaced because the 'outsiders' were too noisy.",
@@ -109,14 +109,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Magical Affinity (+3)', description: 'Cephalios with Arcane Background have an additional 10 Power Points. Those without may take two other Edges instead.' },
             { name: 'Outsider (Minor) (-1)', description: 'Cephalios are strange and mysterious beings even among the people of Illuvia. They subtract 2 from Persuasion rolls when dealing with other races.' }
         ],
-        backgroundPosition: 'center 30%'
+        backgroundPosition: 'center 15%'
     },
     {
         id: 'corves',
         name: 'Corves',
         icon: Bird, 
         iconType: 'lucide',
-        image: 'https://i.pinimg.com/736x/3a/73/76/3a737673b95e7cef5d1b23c498e4992d.jpg',
+        image: 'https://i.pinimg.com/1200x/c8/b9/34/c8b9346a3d48a17005c6fe70e4bd6a4d.jpg',
         tagline: 'Cunning opportunists with a knack for acquisition.',
         description: [
             "The crow-like Corves, also known as 'Tengu,' are known as a race of scavengers and irrepressible thieves. Covetous creatures predominantly motivated by greed, they are vain and easily won over with flattery.",
@@ -160,7 +160,7 @@ export const newRacesData: NewRace[] = [
         name: 'Drow',
         icon: 'fluent-emoji-high-contrast:person-elf', 
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/5f/81/53/5f8153a7f4e75a9b13e579e500bd7d4e.jpg',
+        image: 'https://i.pinimg.com/1200x/c1/91/e7/c191e7a8aa5bb8a35c1e55e2588c10f4.jpg',
         tagline: 'Children of darkness with poison in their veins.',
         description: [
             "Descended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world. Now they have built their own civilization in the depths of Ennys Ennore. Drows live in a matriarchal society, led by the High Matriarch.",
@@ -181,7 +181,7 @@ export const newRacesData: NewRace[] = [
         name: 'Duergar',
         icon: 'game-icons:dwarf-face', 
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/a4/dd/3c/a4dd3c0e70ddd1d9566f10f96a38cfda.jpg',
+        image: 'https://i.pinimg.com/1200x/8a/ca/e1/8acae1e270f853267b680b4a36fbe1b5.jpg',
         tagline: 'Exiled dwarves, embracing the power of Chronyte.',
         description: [
             "Exiled from the fortress of Hin Boldahr, the Duergar lives their lives in the underground, where they contracted with the magic of Chronyte. For generations, they harness this energy to their advantage, building a society for themselves. They naturally hate the dwarves for their unjustified exile.",
@@ -203,7 +203,7 @@ export const newRacesData: NewRace[] = [
         name: 'Essimia',
         icon: 'emojione-monotone:gorilla', // Iconify string
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/ce/af/a9/ceafa9d626ec8fce1b603851f41a8e03.jpg',
+        image: 'https://i.pinimg.com/1200x/98/7c/a9/987ca9b5de38bc07f14d0095f5f7036c.jpg',
         tagline: 'Born leaders with primate strength and human cunning.',
         description: [
             "One of many creatures from the depths of Pavlovyshka, and rare few that is deemed successful and is able to integrate to society after the raid of the infamous bio-engineering lab. Essima is a human-primate hybrid, possessing their strength, endurance and intelligence.", // Corrected typo: Essimia
@@ -223,7 +223,7 @@ export const newRacesData: NewRace[] = [
         name: 'Half-Giant (Goliath)',
         icon: 'game-icons:giant', // Iconify: placeholder for giant/large human
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/your-half-giant-image.jpg', // REPLACE WITH ACTUAL IMAGE
+        image: 'https://i.pinimg.com/1200x/bd/d1/3e/bdd13e8bdc3d0359f16d4ed22e7dac91.jpg', // REPLACE WITH ACTUAL IMAGE
         tagline: 'Towering fey with tribal hearts and immense strength.',
         description: [
             "Standing over eight feet tall, Half-Giants, also known as 'Goliath,' are the largest of the more common fey races. Their skin ranges from nearly black to deep tan, with black hair and eyes of blue, green, or sometimes striking red.",
@@ -240,14 +240,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Very Strong (+2)', description: 'Start with Strength d8, maximum Strength d12+2.' },
             { name: 'Very Tough (+2)', description: 'Start with Vigor d8, maximum Vigor d12+2.' }
         ],
-        backgroundPosition: 'center 30%' // Adjust as needed
+        backgroundPosition: 'center 20%' // Adjust as needed
     },
     {
         id: 'harelings',
         name: 'Harelings',
         icon: Rabbit, // Iconify
         iconType: 'lucide',
-        image: 'https://i.pinimg.com/736x/your-hareling-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/1200x/2b/2a/ee/2b2aeeb7752fb1ddda99df100deeb3a2.jpg', // REPLACE
         tagline: 'Witty, nimble performers with a spring in their step.',
         description: [
             "Another creation from Pavlovyshka, Harelings are hare-human hybrids known for their charisma. They are humorous, witty, cunning, persuasive, and sometimes deceptive—joyous performers who are surprisingly capable combatants.",
@@ -261,14 +261,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Size (-1)', description: 'Small creatures, reducing Size and Toughness by 1.' },
             { name: 'Social Creatures (+1)', description: 'Naturally good talkers. Gain +2 to Persuasion rolls.' }
         ],
-        backgroundPosition: 'center 40%' // Adjust
+        backgroundPosition: 'center 22%' // Adjust
     },
     {
         id: 'kobold',
         name: 'Kobold',
         icon: 'game-icons:lizardman', // Iconify: placeholder for small draconic/reptilian
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/your-kobold-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/1200x/29/d9/45/29d945db8603d25507fb38c0dd186bce.jpg', // REPLACE
         tagline: 'Small, scaly draconic beings, witty and resourceful.',
         description: [
             "Small, usually red-skinned and scaly, Kobolds display their draconic ancestry through the glint of their scales and their distinctive roars. Legends say they first emerged from Avandira near the lairs of the last Celestial Dragons, whom some still worship.",
@@ -282,14 +282,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Sneaky (+1)', description: 'Rely on stealth to survive. Start with Stealth d6.' },
             { name: 'Yellow (Major) (-2)', description: 'Meek creatures preferring traps and indirect combat. Suffer -2 to Fear checks and resisting Intimidation due to the Yellow (Major) Hindrance.' }
         ],
-        backgroundPosition: 'center center' // Adjust
+        backgroundPosition: 'center 22%' // Adjust
     },
     {
         id: 'marionette',
         name: 'Marionette',
-        icon: 'mdi:robot-love-outline', // Iconify: placeholder for puppet/doll-like construct
+        icon: 'mdi:robot-love-outline', 
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/your-marionette-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/1200x/f5/f7/84/f5f784770a559673dade021cadb4fc2c.jpg', // REPLACE
         tagline: 'Souls preserved in clockwork, forever bound to a performance.',
         description: [
             "Once simple puppets for entertainment, Marionettes evolved from leather and wood to intricate clockwork bodies housing preserved souls, typically human. Strings, once functional, are now often vestigial.",
@@ -306,14 +306,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Size (-1)', description: 'Small, doll-like creatures (halfling-sized or smaller). Size and Toughness suffer a -1 penalty.' },
             { name: 'Performer (+2)', description: 'Innate ability for impressive performative acts. Gain +2 to Performance and Persuasion rolls.' }
         ],
-        backgroundPosition: 'center 30%' // Adjust
+        backgroundPosition: 'center 15%' // Adjust
     },
     {
         id: 'satyr',
         name: 'Satyr',
         icon: 'emojione-monotone:deer', // Iconify
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/your-satyr-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/1200x/f7/9a/25/f79a25e3d978686fe51047d0228e82e8.jpg', // REPLACE
         tagline: 'Joyful revelers from the Feywild, bringing merriment and resisting magic.',
         description: [
             "Originating from the Wyld Plains—a realm of pure emotion—Satyrs thrive on the energy of merriment. They resemble elves but have goatlike legs, cloven hooves, and ram or goat horns. Fey magic grants them innate abilities to perform, delight, and resist magical intrusions.",
@@ -327,14 +327,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Reveler (+2)', description: 'Embodiment of revelry, naturally charming. Gain +2 to Persuasion and Performance rolls.' },
             { name: 'Toughness (+1)', description: 'Body covered with thick leather, granting +1 Toughness.' }
         ],
-        backgroundPosition: 'center center' // Adjust
+        backgroundPosition: 'center 22%' // Adjust
     },
     {
         id: 'tiefling',
         name: 'Tiefling',
         icon: 'game-icons:devil-mask', 
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/your-tiefling-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/1200x/01/9c/b0/019cb0f3a3fc1a40296fe817d06f87b0.jpg', // REPLACE
         tagline: 'Fiendish scions, wrestling with heritage and choosing their own fate.',
         description: [
             "Simultaneously more and less than mortal, Tieflings are the offspring of humans and fiends. Their otherworldly blood often leads to them being shunned out of fear. Most never know their fiendish sire, the taint manifesting at birth or later in life.",
@@ -353,7 +353,7 @@ export const newRacesData: NewRace[] = [
         name: 'Undines (Sea Elf/Merfolk)',
         icon: Waves, 
         iconType: 'lucide',
-        image: 'https://i.pinimg.com/736x/your-undine-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/736x/51/0c/09/510c09a41decd5ff713295d7ae911f36.jpg', // REPLACE
         tagline: 'Fluid beings of water, adaptable and community-focused.',
         description: [
             "Undines, also known as Sea Elves or Merfolk, have varied looks with distinctive colorations resembling bodies of deep water (pale blue, sea green, navy) or even sandy hues for those near desert oases. They might have fin-like ears, webbed hands/feet, coral growths, fish scales, tails, or bioluminescence.",
@@ -368,14 +368,14 @@ export const newRacesData: NewRace[] = [
             { name: 'Hesitant (Minor) (-1)', description: 'Harmonious and conservative, hesitates in stressful situations. Draw two Action Cards in combat, act on the lowest (Jokers used normally). Cannot take Level Headed or Quick Edges.' },
             { name: 'Elemental Resistance: Cold (+1)', description: 'Natural resistance to ice, cold, and water-based attacks. Toughness vs. such attacks and Trait rolls vs. those effects gain a +2 bonus.' }
         ],
-        backgroundPosition: 'center 30%' // Adjust
+        backgroundPosition: 'center 15%' // Adjust
     },
     {
         id: 'vulpess',
         name: 'Vulpess (Kitsune)',
         icon: 'game-icons:fox-head',
         iconType: 'iconify',
-        image: 'https://i.pinimg.com/736x/your-vulpess-image.jpg', // REPLACE
+        image: 'https://i.pinimg.com/1200x/d7/9b/d1/d79bd1d40b298bbd31c74f9895584b82.jpg', // REPLACE
         tagline: 'Fox spirits in mortal guise, warning of a future imbalance.',
         description: [
             "Unlike Pavlovyshka creations, Vulpess are native to the Yuen continent, manifestations of the fox spirits there. Foreseeing nature's destruction by unchecked progress, their Goddess sent parts of herself as the Vulpess to blend with mortals and warn of this dark future.",
