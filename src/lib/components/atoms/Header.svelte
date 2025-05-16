@@ -19,10 +19,11 @@
 <!-- Navigation with baroque styling -->
 <header class="bg-primay-950 border-tertiary-500 w-full border-b">
 	<nav class="baroque-nav bg-tertiary-950 flex w-full items-center justify-between px-6 py-4">
+		<a href="/" >
 		<div class="logo">
 			<h5 class="text-primary-50">Illuvia</h5>
 		</div>
-
+</a>
 		<button
 			class="text-primary-400 transition-all duration-300 md:hidden"
 			onclick={toggleMenu}
