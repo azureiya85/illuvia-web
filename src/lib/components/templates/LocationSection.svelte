@@ -80,6 +80,7 @@
 					></div>
 					<!-- Title & Description That Moves Up On Hover -->
 					<div>
+						<a href="/locations" >
 						<h5
 							class="absolute bottom-0 mb-4 w-full p-4 text-2xl font-bold text-white transition-all duration-500 group-hover:bottom-48"
 						>
@@ -91,6 +92,7 @@
 						>
 							{nation.shortDesc}
 						</p>
+						</a>
 					</div>
 				</div>
 			{/each}

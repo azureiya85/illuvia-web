@@ -226,7 +226,7 @@
                                         panelPadding="p-0"
                                     >
                                         {#snippet control()}
-                                            <div class="relative h-32 md:h-36 w-full">
+                                            <div class="relative h-16 md:h-24 w-full">
                                                 {#if powerGroup.image}
                                                     <div
                                                         class="absolute inset-0 bg-cover bg-no-repeat transition-transform duration-300 ease-in-out group-hover/item:scale-105"
@@ -256,7 +256,7 @@
                                             </div>
                                         {/snippet}
                                         {#snippet panel()}
-                                            <div class="p-4 md:p-6 bg-surface-100-800-token">
+                                            <div class="p-4 md:p-6 bg-surface-100/10 border border-secondary-600 shadow-xl">
                                                 <div class="prose prose-sm md:prose-base dark:prose-invert max-w-none {modifierGroupColors.text} opacity-95">
                                                     <ul class="!pl-0 !list-none space-y-3">
                                                         {#each powerGroup.newModifiers as modifier (modifier.id)}

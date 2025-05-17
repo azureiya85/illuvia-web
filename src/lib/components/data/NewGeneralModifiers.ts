@@ -52,7 +52,7 @@ export const modifierGroupColors = {
 	bg: 'bg-surface-200-700-token',
 	text: 'text-surface-900 dark:text-surface-50',
 	accentText: 'text-secondary-600 dark:text-secondary-600',
-	gradient: 'bg-gradient-to-l from-transparent via-primary-200/40 dark:via-primary-700/40 to-primary-200/80 dark:to-primary-700/80'
+	gradient: 'bg-gradient-to-l from-transparent via-secondary-200/40 dark:via-secondary-700/40 to-secondary-200/80 dark:to-secondary-700/80'
 };
 
 export const newGeneralModifiersData: PowerWithNewModifiers[] = [

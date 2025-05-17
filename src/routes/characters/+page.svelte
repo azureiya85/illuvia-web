@@ -207,12 +207,12 @@
                                     </div>
                                 {/snippet}
                                 {#snippet panel()}
-                                    <div class="p-4 md:p-6 bg-surface-100-800-token">
+                                    <div class="p-4 md:p-6 bg-surface-100/10 border border-secondary-600 shadow-xl">
                                         <div class="prose prose-sm md:prose-base text-lg text-black dark:prose-invert max-w-none text-token">
                                             {#each race.description as paragraph}
                                                 <p>{@html paragraph}</p>
                                             {/each}
-                                            <h4 class="h5 !mt-6 !mb-2 text-secondary-600 dark:text-secondary-400">Ancestry Features:</h4>
+                                            <h4 class="h5 !mt-6 !mb-2 text-secondary-600 dark:text-secondary-600">Ancestry Features:</h4>
                                             <ul class="!pl-5">
                                                 {#each race.features as feature}
                                                     <li>
