@@ -9,6 +9,7 @@ import {
     LucideChevronRight,
     LucideGanttChartSquare,
     LucideCalculator,
+    ArrowDown
 } from '@lucide/svelte';
 
 // Type for Lucide icon components 
@@ -67,7 +68,7 @@ export const characterCreationSteps: CreationStep[] = [
             {
                 type: 'button', 
                 label: 'Discover New Illuvian Ancestries',
-                icon: LucideChevronRight,
+                icon: ArrowDown,
                 onClick: () => { // This will need to be handled in the component if defined here
                     const element = document.getElementById('new-races-section');
                     if (element) {

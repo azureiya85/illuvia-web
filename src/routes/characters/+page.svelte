@@ -70,7 +70,7 @@
 <svelte:window onkeydown={handleKeydown} />
 
 <section
-	class="bg-surface-500 dark:bg-surface-500 flex min-h-screen w-full flex-col items-center pb-16 pt-0 md:pb-24"
+	class="bg-tertiary-400 dark:bg-tertiary-400 flex min-h-screen w-full flex-col items-center pb-16 pt-0 md:pb-24"
 	in:fade={{ duration: 300 }}
 >
 	<!-- Title Section  -->
@@ -90,7 +90,7 @@
 	</div>
 
 	<!-- Character Creation Steps using Tabs -->
-	<div class="w-full max-w-7xl px-4 md:px-4 lg:px-0 mb-16 character-creation-tabs">
+	<div class="w-full max-w-7xl px-4 md:px-4 lg:px-0 mb-16 character-creation-tabs bg-surface-100/10 border border-secondary-600">
         <h2 class="h2 text-center mb-8 text-primary-200 dark:text-secondary-600">Creation Process</h2>
         <Tabs
             value={creationStepTab}

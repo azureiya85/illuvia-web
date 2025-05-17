@@ -98,7 +98,7 @@
 
 
 <section
-    class="bg-surface-500 dark:bg-surface-500 w-full min-h-screen  relative transition-all duration-300"
+    class="bg-tertiary-400 dark:bg-tertiary-400 w-full min-h-screen  relative transition-all duration-300"
     class:filter={inspectedItem ? 'blur-sm brightness-75 dark:brightness-50' : 'none'}
     class:pointer-events-none={inspectedItem}
     class:bg-surface-50-900-token={!inspectedItem}
@@ -106,7 +106,7 @@
     in:fade={{ duration: 300}}
 >
 	<!-- Header Section -->
-	<div class="pt-24 bg-surface-500 dark:bg-surface-500 relative mb-12 w-full shadow-xl md:mb-20">
+	<div class="pt-24 bg-tertiary-400 dark:bg-tertiary-400 relative mb-12 w-full shadow-xl md:mb-20">
 		<div class="absolute inset-0 z-0 h-[500px] md:h-[550px]">
 			<img src="/images/clockpunk-edges.avif" alt="Scrolls, cards, and adventuring gear" class="h-full w-full object-cover object-center "/>
 		</div>
@@ -122,7 +122,7 @@
 	</div>
 
 	<!-- Main Content Area with Tabs -->
-	<div class="pt-12 bg-surface-500 dark:bg-surface-500 mx-auto max-w-8xl px-12">
+	<div class="pt-12 bg-tertiary-400 dark:bg-tertiary-400 mx-auto max-w-8xl px-12">
 		<Tabs
             value={activeTab}
             onValueChange={(e) => (activeTab = e.value)}

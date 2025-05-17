@@ -49,7 +49,7 @@
 	>
 		{#each overviewContent as card (card.id)}
 			<div
-				class="card border border-secondary-600 shadow-md hover:shadow-xl transition-all duration-300 translate-y-2 bg-surface-100/10 md:p-6 rounded-lg backdrop-blur-sm"
+				class="card border border-secondary-600 shadow-md hover:shadow-xl transition-all duration-300 hover:translate-y-2 bg-surface-100/10 md:p-6 rounded-lg backdrop-blur-sm"
 			>
 				<h6 class="h6 text-secondary-600 mb-3">{card.title}</h6>
 				<p class="text-sm text-black md:text-base">{card.text}</p>
