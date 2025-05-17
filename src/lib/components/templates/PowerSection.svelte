@@ -17,11 +17,12 @@
 				downfall. The crystal of peace and mass destruction. Illuvia's blessing and its curse.<br />
 				<br />How will you wield such thing of immense power?
 			</p>
-
+			<a href="/powers-modifiers">
 			<button class="flex items-center gap-2">
 				New Powers & Modifiers
 				<LucideZap size={20} />
 			</button>
+			</a>
 		</div>
 	</div>
 

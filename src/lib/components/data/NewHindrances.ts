@@ -1,5 +1,3 @@
-// src/lib/components/data/hindrancesData.ts
-
 export type HindranceType = 'Minor' | 'Major' | 'Minor/Major';
 
 export interface Hindrance {
@@ -7,12 +5,10 @@ export interface Hindrance {
 	name: string;
 	type: HindranceType;
 	description: string[]; // Array of paragraphs
-	// Hindrances usually don't have "requirements" like Edges, but you could add a 'sourcebook' or 'notes' field if needed.
 	image?: string; // Optional image for the card
 }
 
 // --- COLOR MAPPING FOR HINDRANCE TYPES ---
-// Using Tailwind CSS classes
 export const hindranceTypeColors: Record<HindranceType, { bg: string; text: string; border: string; shadowColor: string }> = {
     Minor:         { bg: 'bg-primary-950 dark:bg-primary-950',      text: 'text-primary-100',   border: 'border-primary-600 dark:border-primary-700', shadowColor: 'rgba(37, 99, 235, 0.7)' /* primary 600 */ },
     Major:         { bg: 'bg-secondary-500 dark:bg-secondary-600',  text: 'text-white', border: 'border-secondary-600 dark:border-secondary-700', shadowColor: 'rgba(234, 88, 12, 0.7)' /* secondary 600 */ },

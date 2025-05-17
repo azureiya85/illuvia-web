@@ -2,6 +2,7 @@
 	import { fade } from 'svelte/transition';
 	import { Tabs } from '@skeletonlabs/skeleton-svelte'; 
 	import { combatRulesData, type CombatRule, type TabbedContentItem } from '$lib/components/data/CombatRules';
+	import { LucideBookMarked, LucideUserPlus } from '@lucide/svelte';
 
 	
     let numberCrunchinSubTab = $state(combatRulesData.find(r => r.id === 'number-crunchin')?.tabbedContent?.[0]?.id || 'melee-attacks');
@@ -157,10 +158,38 @@
 		{/each}
 	</div>
 
-    <div class="mt-16 w-full max-w-3xl text-center md:mt-24">
+    <div class="mt-16 w-full max-w-3xl text-center md:mt-24 border-b border-primary-800">
 		<p class="text-xl text-secondary-100 dark:text-secondary-500">
 			This covers the essentials of Savage Worlds combat. For more advanced tactics, situational rules, and specific gear interactions, consult SWADE Core Rulebook.
 		</p>
+	</div>
+
+    <!-- Concluding CTA Section -->
+	<div class="w-full max-w-3xl text-center md:mt-24">
+    <h2 class="h2 text-secondary-500 dark:text-secondary-600 mb-8">Back To Basics or Learn More?</h2>
+		<div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
+			<a
+				href="/characters"
+				class="btn variant-filled-primary bg-secondary-700 text-white rounded-xl flex items-center justify-center gap-2 text-lg"
+			>
+				<LucideUserPlus size={24} />
+				Character Creation
+			</a>
+			<a
+				href="/rules"
+				class="btn variant-filled-secondary flex bg-secondary-700 text-white rounded-xl items-center justify-center gap-2 text-lg"
+			>
+				<LucideBookMarked size={24} />
+				Core Rules
+			</a>
+            <a
+				href="/rules/new"
+				class="btn variant-filled-secondary flex bg-secondary-700 text-white rounded-xl items-center justify-center gap-2 text-lg"
+			>
+				<LucideBookMarked size={24} />
+				New Rules
+			</a>
+		</div>
 	</div>
 </section>
 

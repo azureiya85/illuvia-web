@@ -233,6 +233,26 @@
 			{/if}
 		</div>
 	</section>
+     <!-- Concluding CTA Section -->
+	<div class="mt-4 w-full max-w-3xl text-center md:mt-24">
+		<h2 class="h2 text-secondary-500 dark:text-secondary-600 mb-8">Need A Reminder?</h2>
+		<div class="flex flex-col gap-4 sm:flex-row sm:justify-center">
+			<a
+				href="/rules"
+				class="btn variant-filled-primary bg-secondary-700 text-white rounded-xl flex items-center justify-center gap-2 text-lg"
+			>
+				<LucideUserPlus size={24} />
+				Core Rules
+			</a>
+			<a
+				href="/rules/combat"
+				class="btn variant-filled-secondary flex bg-secondary-700 text-white rounded-xl items-center justify-center gap-2 text-lg"
+			>
+				<LucideBookMarked size={24} />
+				Combat Rules
+			</a>
+		</div>
+	</div>
 </section>
 
 <style lang="postcss">
