@@ -3,9 +3,11 @@
 	import { Tabs, Accordion } from '@skeletonlabs/skeleton-svelte'; // Accordion is already here
 	import { powersData, type Power, type PowerRank, powerRankColors, type PowerModifierItem } from '$lib/components/data/NewPowers';
 	import { newGeneralModifiersData, type PowerWithNewModifiers, type GeneralPowerModifier, modifierGroupColors } from '$lib/components/data/NewGeneralModifiers';
-	import IconZap from '@lucide/svelte/icons/zap';
+	import { elementalManipulationTableData, type ElementalManipulationEntry } from '$lib/components/data/ElementalManipulationTable';    
+    import IconZap from '@lucide/svelte/icons/zap';
 	import IconSettings2 from '@lucide/svelte/icons/settings-2';
     import IconX from '@lucide/svelte/icons/x';
+    import IconListChecks from '@lucide/svelte/icons/list-checks';
 
     let activeTab = $state('powers');
 
@@ -69,8 +71,7 @@
 	<!-- Header Section -->
 	<div class="pt-24 bg-tertiary-400 dark:bg-tertiary-400 relative mb-12 w-full shadow-xl md:mb-20">
 		<div class="absolute inset-0 z-0 h-[500px] md:h-[550px]">
-			<!-- Replace with a relevant image for Powers & Modifiers -->
-			<img src="/images/arcane-library.avif" alt="Arcane energies and ancient tomes" class="h-full w-full object-cover object-center"/>
+			<img src="/images/illuvia-powers.avif" alt="Arcane energies and ancient tomes" class="h-full w-full object-cover object-center"/>
 		</div>
 		<div class="absolute inset-0 z-10 h-[500px] md:h-[550px] bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
 		<div class="relative z-20 mx-auto flex h-[300px] max-w-4xl flex-col items-center justify-center px-4 text-center md:h-[350px]">
@@ -107,7 +108,7 @@
 
 			{#snippet content()}
 				<Tabs.Panel value="powers" classes="min-h-[50vh]">
-					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">Explore New Powers</h3>
+					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">New Powers</h3>
                     <div class="mb-8 flex flex-wrap justify-center gap-2">
                         <button type="button" class="btn rounded {selectedPowerRank === 'All' ? 'variant-filled-primary' : 'variant-ghost-surface'}" onclick={() => selectedPowerRank = 'All'}>All Ranks</button>
                         {#each powerRanks as rank}
@@ -122,7 +123,7 @@
                         {/each}
                     </div>
 
-                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-12"> 
+                    <div class="grid grid-cols-2 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-12"> 
                         {#if filteredPowers.length > 0}
                             {#each filteredPowers as power (power.id)}
                                 {@const colors = powerRankColors[power.rank] || powerRankColors.Novice}
@@ -202,13 +203,13 @@
 
 			
 				<Tabs.Panel value="modifiers" classes="min-h-[50vh]">
-					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">Browse New General Modifiers</h3>
-                    <p class="text-token mb-8 text-center text-surface-700 dark:text-surface-300 text-lg max-w-3xl mx-auto">
+					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">New Modifiers</h3>
+                    <p class="text-semibold text-token mb-8 text-center text-surface-950 dark:text-surface-950 text-xl max-w-3xl mx-auto">
                         These are new ways to augment existing powers from the Savage Worlds core rules or companion books. Click on a power name to see its new modifier options.
                     </p>
 
                     {#if newGeneralModifiersData && newGeneralModifiersData.length > 0}
-                        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 max-w-6xl mx-auto">
+                        <div class="grid grid-cols-4 gap-4 md:grid-cols-5 md:gap-6 max-w-8xl mx-auto">
                             {#each newGeneralModifiersData as powerGroup (powerGroup.id)}
                                 <Accordion
                                     value={openModifierAccordions}
@@ -240,7 +241,7 @@
                                                   {#if powerGroup.icon}
                                                     <!-- Render Lucide icon directly -->
                                                     {@const IconComponent = powerGroup.icon}
-                                                    <IconComponent size={28} class="{modifierGroupColors.accentText} flex-shrink-0" strokeWidth={1.75} />
+                                                    <IconComponent size={28} class="text-primary-500 flex-shrink-0" strokeWidth={1.75} />
                                                 {/if}
                                                     <div class="flex flex-col text-left">
                                                         <span class="h5 !mb-0.5 font-bold {modifierGroupColors.text}">{powerGroup.powerName}</span>
@@ -262,10 +263,10 @@
                                                             <li class="!pl-0 border-b border-surface-500/20 pb-3 last:border-b-0 last:pb-0">
                                                                 <strong class="text-base font-semibold {modifierGroupColors.accentText}">{modifier.name} ({modifier.cost})</strong>
                                                                 {#each modifier.description as paragraph}
-                                                                    <p class="text-sm !my-1">{@html paragraph}</p>
+                                                                    <p class="text-black text-md !my-1">{@html paragraph}</p>
                                                                 {/each}
                                                                 {#if modifier.trappings}
-                                                                    <p class="text-xs italic !mt-1 opacity-75">Trappings: {modifier.trappings}</p>
+                                                                    <p class="text-gray-800 text-xs italic !mt-1 opacity-75">Trappings: {modifier.trappings}</p>
                                                                 {/if}
                                                             </li>
                                                         {/each}
@@ -280,6 +281,36 @@
                     {:else}
                         <p class="text-token text-center">Information on new general modifiers coming soon!</p>
                     {/if}
+                      <!-- Elemental Manipulation Table Section -->
+                    <div class="mt-16 pt-10 pb-8 border-t-2 border-surface-300 dark:border-surface-700">
+                        <div class="mb-10 text-center">
+                            <IconListChecks size={48} class="mx-auto mb-3 text-secondary-500 dark:text-secondary-400" strokeWidth={1.5} />
+                            <h4 class="h4 text-secondary-600 dark:text-secondary-500">Elemental Manipulation Table</h4>
+                            <p class="text-xl text-semibold text-surface-950 dark:text-surface-950 max-w-2xl mx-auto">
+                                Examples of common effects achieved through the Elemental Manipulation power.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+                            {#each elementalManipulationTableData as element (element.id)}
+                                {@const ElIcon = element.icon}
+                                {@const colors = element.themeColor || { bg: 'bg-surface-100 dark:bg-surface-800', text: 'text-surface-900 dark:text-surface-50', icon: 'text-primary-500 dark:text-primary-400', border: 'border-surface-300 dark:border-surface-700' }}
+                                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden {colors.bg} border {colors.border}">
+                                    <header class="p-4 flex items-center space-x-3 border-b {colors.border} {colors.bg} sticky top-0 z-10 shadow-sm"> 
+                                        <ElIcon size={28} class="{colors.icon} flex-shrink-0" strokeWidth={1.75}/>
+                                        <h5 class="h5 !mb-0 font-semibold {colors.text}">{element.elementName}</h5>
+                                    </header>
+                                    <div class="p-4 md:p-5 flex-grow">
+                                        <ul class="space-y-2.5 list-disc list-inside text-sm {colors.text} opacity-90">
+                                            {#each element.effects as effect (effect.id)}
+                                                <li class="text-md leading-relaxed">{@html effect.description}</li>
+                                            {/each}
+                                        </ul>
+                                    </div>
+                                </div>
+                            {/each}
+                        </div>
+                    </div>
 				</Tabs.Panel>
 			{/snippet}
 		</Tabs>
@@ -331,7 +362,7 @@
                     </div>
                 {/if}
 
-                <article class="prose dark:prose-invert p-5 flex-grow overflow-y-auto max-h-[calc(70vh-250px)] {modalColors.text} bg-black/10 dark:bg-black/20 text-sm md:text-base">
+                <article class="text-xl prose dark:prose-invert p-5 flex-grow overflow-y-auto max-h-[calc(70vh-250px)] {modalColors.text} bg-black/10 dark:bg-black/20 text-sm md:text-base">
                     {#each currentItem.description as p}
                         <p>{@html p}</p>
                     {/each}

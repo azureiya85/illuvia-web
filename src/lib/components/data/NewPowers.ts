@@ -46,21 +46,21 @@ export const powerRankColors: Record<
 		shadowColor: 'rgba(13, 148, 136, 0.5)'
 	},
 	Seasoned: {
-		bg: 'bg-primary-600 dark:bg-primary-700',
+		bg: 'bg-primary-900 dark:bg-primary-900',
 		text: 'text-primary-50 dark:text-primary-100',
 		border: 'border-primary-400 dark:border-primary-500',
 		shadowColor: 'rgba(37, 99, 235, 0.5)'
 	},
 	Veteran: {
 		bg: 'bg-secondary-600 dark:bg-secondary-700',
-		text: 'text-secondary-50 dark:text-secondary-100',
+		text: 'text-secondary-50 dark:text-secondary-50',
 		border: 'border-secondary-400 dark:border-secondary-500',
 		shadowColor: 'rgba(234, 88, 12, 0.5)'
 	},
 	Heroic: {
-		bg: 'bg-warning-500 dark:bg-warning-600',
-		text: 'text-warning-50 dark:text-warning-100',
-		border: 'border-warning-300 dark:border-warning-400',
+		bg: 'bg-surface-500 dark:bg-surface-600',
+		text: 'text-surface-50 dark:text-surface-100',
+		border: 'border-surface-300 dark:border-surface-400',
 		shadowColor: 'rgba(245, 158, 11, 0.5)'
 	},
 	Legendary: {
