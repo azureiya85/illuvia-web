@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Home from '$lib/components/templates/HeroSection.svelte';
+	import OverviewSection from '$lib/components/templates/OverviewSection.svelte';
 	import Rule from '$lib/components/templates/RuleSection.svelte';
 	import CharacterSection from '$lib/components/templates/CharacterSection.svelte';
 	import PowerSection from '$lib/components/templates/PowerSection.svelte';
@@ -21,6 +22,7 @@
 
 {#if showHero}
 	<Home />
+	<OverviewSection />
 	<Rule />
 	<CharacterSection />
 	<PowerSection />

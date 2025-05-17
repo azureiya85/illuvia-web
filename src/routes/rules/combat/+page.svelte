@@ -9,13 +9,13 @@
 </script>
 
 <section
-	class="bg-surface-500 dark:bg-surface-500 flex min-h-screen w-full flex-col items-center pb-16 pt-0 md:pb-24"
+	class="bg-tertiary-400 dark:bg-tertiary-400 flex min-h-screen w-full flex-col items-center pb-16 pt-0 md:pb-24"
 	in:fade={{ duration: 300 }}
 >
-	<!-- Full-width Background Container for Title (Same as before) -->
+	<!-- Full-width Background Container for Title  -->
 	<div class="relative mb-12 w-full shadow-xl md:mb-20 h-[450px] md:h-[550px]">
 		<div class="absolute inset-0 z-0 h-full">
-			<img src="/images/combat-bg.avif" alt="Dynamic battle scene in Illuvia" class="h-full w-full object-cover object-center"/>
+			<img src="/images/illuvia-battle.avif" alt="Dynamic battle scene in Illuvia" class="h-full w-full object-cover object-center"/>
 		</div>
 		<div class="absolute inset-0 z-10 h-full bg-neutral-900/60 dark:bg-neutral-900/75"></div>
 		<div class="relative z-20 mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-4 text-center">
@@ -33,19 +33,19 @@
 		{#each combatRulesData as rule (rule.id)}
 			{@const RuleIcon = rule.icon}
 			<div
-				class="card group bg-surface-100-800-token flex flex-col rounded-lg p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.01]"
+				class="card group bg-surface-100/10 border border-secondary-600 flex flex-col rounded-lg p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.01]"
 			>
-				<div class="mb-4 flex items-center gap-4 border-b border-surface-200-700-token pb-4">
+				<div class="mb-4 flex items-center gap-4 border-b border-primary-600 pb-4">
 					<RuleIcon
-						class="h-10 w-10 flex-shrink-0 {rule.iconColor || 'text-primary-500 dark:text-primary-400'}"
+						class="h-10 w-10 flex-shrink-0 {rule.iconColor || 'text-secondary-500 dark:text-secondary-600'}"
 						strokeWidth={1.5}
 					/>
-					<h3 class="h3 text-primary-600 dark:text-primary-300 flex-grow">{rule.title}</h3>
+					<h3 class="h3 text-secondary-600 dark:text-secondary-600 flex-grow">{rule.title}</h3>
 				</div>
 
                 {#if rule.intro}
                     {#each rule.intro as paragraph}
-                        <p class="text-token mb-3 text-lg leading-relaxed">{@html paragraph}</p>
+                        <p class="text-token mb-3 text-xl text-black leading-relaxed">{@html paragraph}</p>
                     {/each}
                 {/if}
 
@@ -53,10 +53,10 @@
 					<ul class="text-token mb-4 ml-1 space-y-3 text-lg">
 						{#each rule.listItems as item}
 							<li class="pl-2">
-                                <strong class="text-secondary-600 dark:text-secondary-400 block mb-0.5">{item.name}:</strong>
-                                <span class="text-surface-700 dark:text-surface-300">{@html item.description}</span>
+                                <strong class="text-secondary-600 dark:text-secondary-600 block mb-0.5">{item.name}:</strong>
+                                <span class="text-surface-700 dark:text-surface-950">{@html item.description}</span>
                                 {#if item.penalty}<span class="text-warning-500 font-semibold ml-1">({item.penalty})</span>{/if}
-                                {#if item.note}<em class="block text-sm text-surface-600 dark:text-surface-400 ml-4 mt-1">Note: {item.note}</em>{/if}
+                                {#if item.note}<em class="block text-sm text-surface-600 dark:text-surface-900 ml-4 mt-1">Note: {item.note}</em>{/if}
                             </li>
 						{/each}
 					</ul>
@@ -89,7 +89,7 @@
                                         {#each subTab.intro as p}<p class="text-token mb-2 text-sm md:text-base">{@html p}</p>{/each}
                                     {/if}
                                     {#if subTab.keyPoints && subTab.keyPoints.length > 0}
-                                        <ul class="text-token list-disc space-y-1 pl-5 text-sm md:text-base">
+                                        <ul class="text-token text-black list-disc space-y-1 pl-5 text-md md:text-lg">
                                             {#each subTab.keyPoints as point}
                                                 <li>{@html point}</li>
                                             {/each}
@@ -109,14 +109,12 @@
                 {/if}
 
                 {#if rule.tableData && rule.tableData.rows.length > 0}
-                    <!-- table-wrap is a Skeleton utility for responsive tables -->
                     <div class="table-wrap my-4 -mx-2 sm:mx-0 rounded-lg border border-surface-300 dark:border-surface-700 overflow-hidden">
                         <table class="table table-hover w-full text-left text-sm md:text-base">
-                            <!-- caption-bottom can be added to class if you use caption -->
                             <thead>
                                 <tr>
                                     {#each rule.tableData.headers as header, colIndex}
-                                        <th class="!bg-surface-200-700-token p-3 font-semibold uppercase tracking-wider text-surface-700 dark:text-surface-300 {colIndex === 0 ? 'w-1/3 md:w-2/5' : ''}">{header}</th>
+                                        <th class="!bg-surface-200-700-token p-3 font-bold uppercase tracking-wider text-surface-700 dark:text-surface-900 {colIndex === 0 ? 'w-1/3 md:w-2/5' : ''}">{header}</th>
                                     {/each}
                                 </tr>
                             </thead>
@@ -126,7 +124,7 @@
                                         {#each rule.tableData.headers as headerKey, colIndex}
                                             {@const cellKey = headerKey.toLowerCase().replace(/\s+/g, '').replace(/\(\+\d+\s*pp\)/i, '')}
                                             {@const currentCellItem = rowItem as any}
-                                            <td class="p-3 text-token align-top">
+                                            <td class="p-3 text-token align-top text-black">
                                                 {#if colIndex === 0 && currentCellItem.icon}
                                                     {@const ModifierIcon = currentCellItem.icon}
                                                     <div class="flex items-center">
@@ -146,9 +144,9 @@
                 {/if}
 
 				{#if rule.keyPoints && !rule.tabbedContent && rule.keyPoints.length > 0}
-                    <div class="mt-auto rounded-md border-l-4 border-accent-500 bg-surface-200-700-token p-4 text-token">
-                        <h4 class="h5 text-accent-600 dark:text-accent-400 mb-2 font-semibold">Key Takeaways:</h4>
-                        <ul class="ml-5 list-disc space-y-1 text-lg">
+                    <div class="mt-auto rounded-md border-l-4 border-secondary-500 bg-secondary-200-700-token p-4 text-token">
+                        <h4 class="h5 text-secondary-600 dark:text-secondary-600 mb-2 font-semibold">Key Takeaways:</h4>
+                        <ul class="text-black ml-5 list-disc space-y-1 text-lg">
                             {#each rule.keyPoints as point}
                                 <li>{@html point}</li>
                             {/each}
@@ -160,8 +158,8 @@
 	</div>
 
     <div class="mt-16 w-full max-w-3xl text-center md:mt-24">
-		<p class="text-xl text-primary-100 dark:text-primary-200">
-			This covers the essentials of Savage Worlds combat. For more advanced tactics, situational rules, and specific gear interactions, consult the full rulebook or advanced sections.
+		<p class="text-xl text-secondary-100 dark:text-secondary-500">
+			This covers the essentials of Savage Worlds combat. For more advanced tactics, situational rules, and specific gear interactions, consult SWADE Core Rulebook.
 		</p>
 	</div>
 </section>

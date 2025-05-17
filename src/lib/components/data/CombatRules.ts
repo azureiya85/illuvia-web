@@ -196,7 +196,7 @@ export const combatRulesData: CombatRule[] = [
         icon: Zap, // Changed from Sparkles for more direct "power" feel
         iconColor: 'text-purple-500',
         title: '7. Using Powers',
-        intro: ["Characters with Arcane Backgrounds unleash potent abilities!"],
+        intro: ["Characters with Arcane Backgrounds unleash potent abilities! They are the equivalent of a magic system of SWADE, but reflavoring is very encouraged. That's why the power descriptions are left open-ended. In case of Illuvia, Powers are cast through gadgets and The Arcane Chronicler, or simply amazing physical or mental technique"],
         keyPoints: [
             "<strong>Activation:</strong> Roll Arcane Skill vs. TN <strong>4</strong>. Success costs 1 Power Point (PP) per target (base). Failure costs 1 PP.",
             "<strong>Raise on Activation:</strong> Often grants bonus effects (see power description).",

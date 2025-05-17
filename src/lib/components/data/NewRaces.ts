@@ -113,7 +113,7 @@ export const newRacesData: NewRace[] = [
     },
     {
         id: 'corves',
-        name: 'Corves',
+        name: 'Corves (Tengu)',
         icon: Bird, 
         iconType: 'lucide',
         image: 'https://i.pinimg.com/1200x/c8/b9/34/c8b9346a3d48a17005c6fe70e4bd6a4d.jpg',
@@ -165,11 +165,11 @@ export const newRacesData: NewRace[] = [
         description: [
             "Descended from an earlier subrace of dark-skinned elves, the drow were banished from the surface world. Now they have built their own civilization in the depths of Ennys Ennore. Drows live in a matriarchal society, led by the High Matriarch.",
             "Unlike other elves, the drows are more violent in nature, though it's not uncommon to see Drow that just want to live a peaceful life, away from the harshness of the underground. Their body can generate poison, a trait that even the drows themselves don't know how it came about.",
-            "Also called the dark elves, the drow have black skin that resembles polished obsidian and stark white or pale yellow hair. They commonly have very pale eyes (so pale as to be mistaken for white) in shades of lilac, silver, pink, red, and blue. They tend to be smaller and thinner than most elves."
+            "Also called the dark elves, the drow have brown skin and stark white or pale yellow hair. They commonly have very pale eyes (so pale as to be mistaken for white) in shades of lilac, silver, pink, red, and blue. They tend to be smaller and thinner than most elves."
         ],
         features: [
             { name: 'Agile (+1)', description: 'Drows are graceful and agile. They start with a d6 in Agility instead of a d4. This increases maximum Agility to d12 + 1.' },
-            { name: 'Dark Vision (+1)', description: 'Drow can see in the dark a short distance, ignoring all illumination penalties and up to 2 points of penalties from invisibility or similar powers within 10" (20 yards) distant.' },
+            { name: 'Dark Vision (+1)', description: 'Drow can see in the dark a short distance, ignoring all illumination penalties and up to 2 points of penalties from invisibility or similar powers within 10" (20 inches) distant.' },
             { name: 'Light-Blindness (-2)', description: 'The drow is sensitive to sunlight due to hundred of years living underground. When they are in bright light, they suffer -2 to all Trait roll that involves sight. As a free action, the player can choose to roll Vigor to remove the penalty for their next action involving sight.' },
             { name: 'Outsider (Minor) (-1)', description: 'The drow is not well-liked amongst the surfacer. They have a hard time to blend in. They suffer -2 to all Persuasion roll.' },
             { name: 'Venomous (+1)', description: 'Drow has the ability to naturally generate poison from their body. They gain Ancestral Background (Gifted) and Smite with Poison Trapping.' }
@@ -276,7 +276,7 @@ export const newRacesData: NewRace[] = [
             "A Kobold's cry can express a wide range of emotions, resonating with draconic power."
         ],
         features: [
-            { name: 'Darkvision (+1)', description: 'Ignores illumination penalties and up to 2 points of penalties from invisibility/similar powers within 10" (20 yards).' },
+            { name: 'Darkvision (+1)', description: 'Ignores illumination penalties and up to 2 points of penalties from invisibility/similar powers within 10" (10 inches).' },
             { name: 'Skilled (+2)', description: 'Survive through wits, creativity, and resourcefulness. Start with Common Knowledge d6 and gain 2 additional starting skill points.' },
             { name: 'Small (-1)', description: 'Small creatures, reducing Size and Toughness by 1.' },
             { name: 'Sneaky (+1)', description: 'Rely on stealth to survive. Start with Stealth d6.' },
@@ -343,7 +343,7 @@ export const newRacesData: NewRace[] = [
         ],
         features: [
             { name: 'Conspicuous (Minor) (-1)', description: 'Varied appearances and unique fashion make individual Tieflings stand out, making them easier to identify.' },
-            { name: 'Darkvision (+1)', description: 'Ignore illumination penalties up to 10” (20 yards).' },
+            { name: 'Darkvision (+1)', description: 'Ignore illumination penalties up to 10” (10 inches).' },
             { name: 'Fiendish Sorcery (+2)', description: 'Gain the Arcane Background (Gifted) Edge and the Darkness power.' }
         ],
         backgroundPosition: 'center 25%' // Adjust

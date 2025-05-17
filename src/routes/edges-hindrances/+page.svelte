@@ -147,12 +147,12 @@
 				<Tabs.Panel value="edges" classes="min-h-[50vh]">
 					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">New Edges</h3>
                     <div class="mb-8 flex flex-wrap justify-center gap-2">
-                        <button type="button" class="btn {selectedEdgeCategory === 'All' ? 'variant-filled-primary' : 'variant-ghost-surface'}" onclick={() => selectedEdgeCategory = 'All'}>All</button>
+                        <button type="button" class="btn rounded {selectedEdgeCategory === 'All' ? 'variant-filled-primary' : 'variant-ghost-surface'}" onclick={() => selectedEdgeCategory = 'All'}>All</button>
                         {#each edgeCategories as category}
                             {@const catColors = edgeCategoryColors[category] || edgeCategoryColors.Background}
                             <button
                                 type="button"
-                                class="btn {selectedEdgeCategory === category ? `${catColors.bg} ${catColors.text} !border-transparent shadow-md` : 'variant-ghost-surface'}"
+                                class="btn {selectedEdgeCategory === category ? `${catColors.bg} ${catColors.text} !border-transparent shadow-md` : 'variant-ghost-surface'} rounded"
                                 onclick={() => selectedEdgeCategory = category}
                             >
                                 {category}
@@ -206,12 +206,12 @@
 				<Tabs.Panel value="hindrances" classes="min-h-[50vh]">
 					<h3 class="h3 mb-6 text-center text-secondary-500 dark:text-secondary-500">New Hindrances</h3>
 					<div class="mb-8 flex flex-wrap justify-center gap-2">
-                        <button type="button" class="btn {selectedHindranceType === 'All' ? 'variant-filled-error' : 'variant-ghost-surface'}" onclick={() => selectedHindranceType = 'All'}>All</button>
+                        <button type="button" class="btn rounded {selectedHindranceType === 'All' ? 'variant-filled-error' : 'variant-ghost-surface'}" onclick={() => selectedHindranceType = 'All'}>All</button>
                         {#each hindranceTypes as typeName}
                             {@const typeColors = hindranceTypeColors[typeName]}
                              <button
                                 type="button"
-                                class="btn {selectedHindranceType === typeName ? `${typeColors.bg} ${typeColors.text} !border-transparent shadow-md` : 'variant-ghost-surface'}"
+                                class="btn  {selectedHindranceType === typeName ? `${typeColors.bg} ${typeColors.text} !border-transparent shadow-md` : 'variant-ghost-surface'} rounded"
                                 onclick={() => selectedHindranceType = typeName}
                             >
                                 {typeName}

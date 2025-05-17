@@ -8,7 +8,7 @@
 </script>
 
 <section
-	class="bg-surface-500 dark:bg-surface-500 flex min-h-screen w-full flex-col items-center pb-16 pt-0 md:pb-24" 
+	class="bg-tertiary-400 dark:bg-tertiary-400 flex min-h-screen w-full flex-col items-center pb-16 pt-0 md:pb-24" 
 	in:fade={{ duration: 300 }}
 >
 	<!-- Full-width Background Container for Title -->
@@ -42,7 +42,7 @@
 	<div class="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
 		{#each coreRulesData as rule (rule.id)}
 			<div
-				class="card group bg-surface-100-800-token flex flex-col rounded-lg p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
+				class="card group bg-surface-100/10 border border-secondary-600 flex flex-col rounded-lg p-6 shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02]"
 			>
 				<div class="mb-4 flex items-center gap-4">
 					<svelte:component
